@@ -1,0 +1,470 @@
+{
+  "introductionText": {
+    "paragraph1": "Bonjour, Je m'appelle Ian Chaya.",
+    "paragraph2": "J'ai 27 ans, je suis né en Argentine mais j'ai aussi la nationalité croate.",
+    "paragraph3": "Je suis Ingénieur Electronique, Diplômé en Transformation Digitale et Industries 4.0 et Développeur Front-end.",
+    "paragraph4": "J'ai de l'expérience dans l'automatisation, la programmation de systèmes embarqués, la conception de circuits électroniques, le traitement du signal et le développement Web front-end.",
+    "paragraph5": "Je suis une personne proactive et enthousiaste. J'aime travailler en équipe et je m'adapte rapidement aux changements.",
+    "paragraph6": "Je suis actuellement membre de l'équipe Automation and Test Engineering chez BGH S.A."
+  },
+
+  "pages": {
+    "education": "Formation",
+    "work-experiences": "Experiences",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "educations": [
+    {
+      "idEd": "unr",
+      "title": "Ingénieur Électronique",
+      "initDate": "03/2013",
+      "finishDate": "03/2021",
+      "description": "Sciences de l'ingénieur : Electronique de Puissance, Automatisme, Systèmes Embarqués, Génie Electrique, Fondamentaux de l'Audio, Télécommunications, IOT, Traitement du Signal, Mathématiques Appliquées. Projet final d'équipe (Simulateur d'amplificateur de valve avec Raspberry Pi)",
+      "place": "Universidad Nacional de Rosario",
+      "logo": "https://www.uma.es/media/cache/16/6f/166f14c7891781044c80d3ce0231d47d.jpg",
+      "certificate": "https://drive.google.com/file/d/1ypLem2J_29DunfUes0IG1mkmIq8FM5el/view",
+      "category": "Principal"
+    },
+    {
+      "idEd": "enib",
+      "title": "Échange Internacional",
+      "initDate": "08/2019",
+      "finishDate": "09/2020",
+      "description": "Génie Electronique et Informatique : Programmation en langage C, Microprocesseurs – Qualité et Qualité Environnementale, Marketing, Ressources Humaines – Projet en Equipe (Sunlight Simulator pour test de panneaux solaires) et Stage Ingénieur (Groupe ZF).",
+      "place": "ENIB",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_ENIB_2012.png",
+      "certificate": "https://drive.google.com/file/d/1Ub_Ker34NG33J5H9SZCXsvsN2oWF9IbV/view?usp=share_link",
+      "category": "Principal"
+    },
+    {
+      "idEd": "coderhouse",
+      "title": "Développeur Front-end",
+      "initDate": "05/2022",
+      "finishDate": "11/2022",
+      "description": "Développement Web : HTML, CSS, Flexbox, Grilles, Animations, Bootstrap, SASS, Git, Github, SEO, Serveurs | Javascript : Syntaxe, Variables, Flux de contrôle, Boucles/Itérations, Fonctions, Objets, Tableaux, JSON, Stockage, DOM, Événements, JQuery, AJAX, SPA | React JS : Création de projet, JSX et transpilling, Composants, Promesses, Asynchronie, MAP, API, Routage et navigation, Événements, Contexte, Rendering, Firebase",
+      "place": "Coderhouse",
+      "logo": "https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1",
+      "certificate": "https://drive.google.com/file/d/1KYu8xga0bWuw1wqKp991n9WeIPHT-ESI/view?usp=share_link",
+      "category": "Principal"
+    },
+    {
+      "idEd": "uia-utn",
+      "title": "Diplôme en Industries 4.0",
+      "initDate": "08/2022",
+      "finishDate": "12/2022",
+      "description": "Data Analytics, Cloud Computing, Cybersécurité, Fabrication Additive, Robotique, Gestion de Projet, Lean Management, Innovation, Leadership et Responsabilité Sociétale, Transfert Didactique et Pédagogique, Réalisation d'un Projet de Transformation Digitale.",
+      "place": "UIA - UTN",
+      "logo": "../uia-utn-rutax.png",
+      "certificate": "",
+      "category": "Principal"
+    },
+    {
+      "idEd": "universal-robots-advanced",
+      "title": "Formation avancée en utilisation des Cobots",
+      "initDate": "11/2022",
+      "finishDate": "11/2022",
+      "description": "Concepts et structure des programmes - Fondamentaux d'URScript - Variables de pose - Systèmes de coordonnées - Utilisation avancée du TCP - Suivi de bande transporteuse - Contrôle de force (avancé).",
+      "place": "Universal Robots",
+      "logo": "../universal-robots.png",
+      "certificate": "https://drive.google.com/file/d/1IvtMwlW3pd4jEMUNC_aRQA6Zhr61gL40/view",
+      "category": "Cours"
+    },
+    {
+      "idEd": "universal-robots-basic",
+      "title": "Formation de base en utilisation des Cobots",
+      "initDate": "09/2021",
+      "finishDate": "09/2021",
+      "description": "Application pick and place - Paramètres de sécurité - Optimisation d'une application pick and place - Démarrage simple - Déroulement du programme - Palettisation - Contrôle de la force (simple) - Application du processus avec sélection de l'opérateur - Redéploiement flexible - Plan de mise en œuvre - Ressources en ligne",
+      "place": "Universal Robots",
+      "logo": "../universal-robots.png",
+      "certificate": "https://drive.google.com/file/d/1FZbkQCeMlsIdvqVBT7RPR8k-NvUi1eX7/view?usp=sharing",
+      "category": "Cours"
+    },
+    {
+      "idEd": "tgmpgymep-inti",
+      "title": "Technologies de Gestion pour l'amélioration de la Productivité",
+      "initDate": "04/2022",
+      "finishDate": "05/2022",
+      "description": "7 Pertes (Qu'est-ce que la productivité. Opérations et/ou intrants qui ajoutent de la valeur - Classification des 7 pertes qui menacent la productivité industrielle - Description de chacune de ces pertes. Actions pour réduire leur effet) | QC 7 (Qualité. Concepts et définitions - 7 outils qualité classiques - 7 nouveaux outils qualité - Usages et exemples) | Kaizen (Outil de résolution de problèmes (Huit étapes-PDCA-A3) - Méthodologie. Utilisation et gestion - Amélioration continue)",
+      "place": "INTI",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/INTI_Logo_2019.png/220px-INTI_Logo_2019.png",
+      "certificate": "https://drive.google.com/file/d/1O7rk3AypBEV_KSBiB9rL7YkUltu6fqXj/view",
+      "category": "Cours"
+    },
+    {
+      "idEd": "scrum-utn",
+      "title": "Scrum Master - Méthodologies Agiles",
+      "initDate": "02/2022",
+      "finishDate": "04/2022",
+      "description": "Application des techniques basées sur les méthodologies agiles - Revue et explication du manifeste agile - Quand appliquer une méthodologie agile ? - Formation de l'engagement client-équipe. - Comment appliquer une méthodologie agile ? - Documentation. Transparence et Collaboration. - Alignement de SCRUM sur les principes des méthodologies agiles. - Visite des différents frameworks. - Quels sont les rôles dans une équipe SCRUM ? - Articulation des rôles avec les principes de collaboration et de transparence des méthodologies agiles - Paramétrage et priorisation du référentiel d'exigences. - Méthode MoSCow. - Flux de travail. - Négociation de la notion de fait. - Alignement du workflow sur la notion de fait. - Quelles sont les réunions ? - Qui participe aux réunions ? - Quels objectifs sont poursuivis dans les réunions ? - Réunions : réunion d'affinement de la User Story, réunion de planification, réunions quotidiennes, réunion de revue de produit (démo), réunion de rétrospective. - Planification des itérations de travail. - Application du workflow aux exigences engagées. - Suivi des progrès. - Métriques de suivi des itérations. Métriques de fermeture d'itération. - Métriques cumulées. - Vitesse et capacité des équipements comme variables incidentes dans l'itération.",
+      "place": "UTN FRRe",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/UTN_FRRE.png",
+      "certificate": "https://drive.google.com/file/d/1vT-CwEat0M63JDYmrxLdvK_FNiXtYuKV/view",
+      "category": "Cours"
+    },
+    {
+      "idEd": "ergonomia-adea",
+      "title": "Formation en Ergonomie",
+      "initDate": "08/2021",
+      "finishDate": "12/2021",
+      "description": "FORMATION EN ERGONOMIE avec des compétences pour identifier les facteurs de risque présents dans le Protocole Ergonomie - Connaître les champs d'action de l'Ergonomie, ainsi que ses domaines d'intervention - Comprendre la vision proactive de l'Ergonomie. Identifier les facteurs de risque pour l'ergonomie au travail, à travers le protocole Ergonomie",
+      "place": "AdEA",
+      "logo": "../AdEA.png",
+      "certificate": "https://drive.google.com/file/d/1VbhhjAcawhDHi-k4FZDbW0GdcF1R1T4S/view",
+      "category": "Courses"
+    },
+    {
+      "idEd": "neumatica-utn",
+      "title": "Installations pneumatiques et commandes électropneumatiques",
+      "initDate": "09/2021",
+      "finishDate": "12/2021",
+      "description": "Développement de la technique de l'air comprimé. Fondements physiques. Compresseurs, types et sélection. Distribution d'air comprimé, dimensionnement. Préparation de l'air comprimé : séparation de l'eau, séchage. Actionneurs pneumatiques à action rectiligne et rotative. Symboles selon ISO 1219. Calcul des forces et consommations. Vannes directionnelles, de débit, de pression, de blocage et de fermeture. constitution interne. Symbologie selon la norme ISO 1219. Vannes composites. Minuteries pneumatiques. Résolution théorique pratique des circuits séquentiels. Assemblage de circuits pneumatiques.",
+      "place": "UTN",
+      "logo": "https://www.frp.utn.edu.ar/info2/wp-content/uploads/2018/08/utn-nacional.jpg",
+      "certificate": "https://drive.google.com/file/d/1wP7RdWs-SK_YcSAd8xQ3zt56TNkgDQXr/view?usp=sharing",
+      "category": "Cours"
+    },
+    {
+      "idEd": "delf-b2",
+      "title": "DELF B2 (87/100)",
+      "initDate": "09/2018",
+      "finishDate": "09/2019",
+      "description": "Compétences de niveau B2 : Est capable de comprendre les idées principales de textes complexes traitant à la fois de sujets concrets et abstraits, même s'ils sont de nature technique, à condition qu'ils soient dans son domaine de spécialisation - Peut interagir avec des locuteurs natifs avec un degré suffisant de fluidité et de naturel, pour que la communication s'effectue sans effort de la part des interlocuteurs - Peut produire des textes clairs et détaillés sur des sujets variés, ainsi que défendre un point de vue sur des sujets généraux, en indiquant le pour et le contre de les différentes options.",
+      "place": "UTN",
+      "logo": "../delf-b2.png",
+      "certificate": "https://drive.google.com/file/d/1NOyCVfPThSK5-d9dwKLPguvMVtmHiMkL/view",
+      "category": "Langues"
+    },
+    {
+      "idEd": "toeic",
+      "title": "TOEIC (960/990)",
+      "initDate": "01/2020",
+      "finishDate": "01/2022",
+      "description": "Résultat équivalent à un niveau C1",
+      "place": "ETS",
+      "logo": "https://trucoslondres.com/wp-content/uploads/2016/08/LOGO-TOEIC.png",
+      "certificate": "https://drive.google.com/file/d/1884EQ6mJcEt3vAuFIrf89H6VJ3Rm2rKu/view?usp=sharing",
+      "category": "Langues"
+    },
+    {
+      "idEd": "marketing-digital-google",
+      "title": "Fondamentaux du marketing numérique",
+      "initDate": "03/2021",
+      "finishDate": "04/2021",
+      "description": "Analyse de données et métriques - Stratégie commerciale - Marketing de contenu - Publicité display - E-commerce - Email marketing - Marketing local - Mobile - SEM - SEO - Réseaux sociaux - Vidéo - Optimisation web",
+      "place": "Google Activate",
+      "logo": "https://pbs.twimg.com/profile_images/1179320706926092289/k5XDmxOF_400x400.jpg",
+      "certificate": "https://drive.google.com/file/d/15SmoscOYyCx0w3miZSdXMKaoyZehkECc/view?usp=share_link",
+      "category": "Cours"
+    }
+  ],
+
+  "categoriesEducation": [
+    { "label": "Toutes" },
+    { "label": "Principal" },
+    { "label": "Cours" },
+    { "label": "Langues" }
+  ],
+
+  "skills": [
+    {
+      "idSkill": "javascript",
+      "title": "Javascript",
+      "category": "Programmation Web",
+      "logo": "../js.png",
+      "rating": "3"
+    },
+    {
+      "idSkill": "html",
+      "title": "HTML",
+      "category": "Programmation Web",
+      "logo": "../html-5.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "css",
+      "title": "CSS",
+      "category": "Programmation Web",
+      "logo": "../css-3.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "react",
+      "title": "React",
+      "category": "Programmation Web",
+      "logo": "../react.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "bootstrap",
+      "title": "Bootstrap",
+      "category": "Programmation Web",
+      "logo": "../bootstrap.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "material-ui",
+      "title": "Material UI",
+      "category": "Programmation Web",
+      "logo": "../material-ui.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "matlab",
+      "title": "MATLAB",
+      "category": "Programmation",
+      "logo": "../Matlab_Logo.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "c",
+      "title": "C",
+      "category": "Programmation",
+      "logo": "../letra-c.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "python",
+      "title": "Python",
+      "category": "Programmation",
+      "logo": "../python.jpeg",
+      "rating": "3"
+    },
+    {
+      "idSkill": "github",
+      "title": "Github",
+      "category": "Programmation Web",
+      "logo": "../github.png",
+      "rating": "3.5"
+    },
+    {
+      "idSkill": "photoshop",
+      "title": "Photoshop",
+      "category": "Adobe",
+      "logo": "../photoshop.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "premiere",
+      "title": "Premiere",
+      "category": "Adobe",
+      "logo": "../premiere-pro.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "universal-robots",
+      "title": "Polyscope - UR",
+      "category": "Robotique",
+      "logo": "../universal-robots.png",
+      "rating": "4.5"
+    },
+    {
+      "idSkill": "fusion360",
+      "title": "Fusion 360",
+      "category": "Modélisation 3D",
+      "logo": "../fusion-360.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "prusaslicer",
+      "title": "Prusa Slicer",
+      "category": "Modélisation 3D",
+      "logo": "../prusaslicer.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "eagle",
+      "title": "Eagle",
+      "category": "Conception PCB",
+      "logo": "../eagle.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "word",
+      "title": "Word",
+      "category": "Office",
+      "logo": "../word.png",
+      "rating": "4.5"
+    },
+    {
+      "idSkill": "excel",
+      "title": "Excel",
+      "category": "Office",
+      "logo": "../excel.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "powerpoint",
+      "title": "PowerPoint",
+      "category": "Office",
+      "logo": "../powerpoint.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "step7",
+      "title": "Step 7",
+      "category": "Programmation PLC",
+      "logo": "../step-7.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "tiaportal",
+      "title": "TIA Portal",
+      "category": "Programmation PLC",
+      "logo": "../tia-portal.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "wincc",
+      "title": "WinCC",
+      "category": "Programmation de PLC",
+      "logo": "../wincc.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "raspberry",
+      "title": "Raspberry Pi",
+      "category": "Microcontrôleurs",
+      "logo": "../raspberry-pi.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "arduino",
+      "title": "Arduino",
+      "category": "Microcontrôleurs",
+      "logo": "../arduino.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "stm32",
+      "title": "STM32 IDE",
+      "category": "Microcontrôleurs",
+      "logo": "../stm32.png",
+      "rating": "4"
+    }
+  ],
+
+  "categoriesSkills": [
+    { "label": "Toutes" },
+    { "label": "Programmation Web" },
+    { "label": "Programmation" },
+    { "label": "Microcontrôleurs" },
+    { "label": "Robotique" },
+    { "label": "Programmation PLC" },
+    { "label": "Modélisation 3D" },
+    { "label": "Adobe" },
+    { "label": "Office" },
+    { "label": "Conception PCB" }
+  ],
+
+  "experiences": [
+    {
+      "idExp": "bgh",
+      "title": "Ingénieur Automatisation et Tests",
+      "initDate": "06/2022",
+      "finishDate": "Actualidad",
+      "description": "Développement de projets et tests d'automatisation industrielle Analyse du fonctionnement de l'usine dans le but de résoudre les problèmes et de mettre en œuvre des améliorations. Budgétisation, conception de prototypes, mise en service et suivi de projet. Modélisation et impression 3D - Fusion 360, Prusa Slicer. Conception et impression de circuits électroniques - Eagle. Programmation de microcontrôleurs en conjonction avec des capteurs et des actionneurs. Programmation de Robots Collaboratifs (Universal Robots) - Polyscope",
+      "entreprise": "BGH S.A.",
+      "place": "Río Grande, Tierra del Fuego, Argentina",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_de_BGH.svg/1200px-Logo_de_BGH.svg.png",
+      "reference": "https://drive.google.com/file/d/1gNf_tYl6lRhhgSKPQIQje1RJwO_CTyDx/view?usp=share_link"
+    },
+    {
+      "idExp": "zf",
+      "title": "Ingénieur R&D",
+      "initDate": "03/2020",
+      "finishDate": "09/2022",
+      "description": "Acquisition de données via des cartes de développement radar, traitement du signal radar, développement d'une application pour analyser la chaîne de traitement du signal radar - MATLAB, App Designer, mmWave Studio, Hardware Accelerator.",
+      "entreprise": "ZF Autocruise",
+      "place": "Brest, Francia",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/ZF_logo_STD_Blue_3CC.svg/640px-ZF_logo_STD_Blue_3CC.svg.png",
+      "reference": "https://drive.google.com/file/d/1OEZ2E5W1BoFsvTeOMgXN1XG2ullADVxw/view?usp=share_link"
+    },
+    {
+      "idExp": "eproc",
+      "title": "Ingénieur en Automatisation",
+      "initDate": "04/2021",
+      "finishDate": "06/2021",
+      "description": "Développement de projets d'automatisation industrielle : programmation PLC, IHM et SCADA. Méthodologies agiles (Scrum) – Step7, TIA Portal, winCC.",
+      "entreprise": "Eproc",
+      "place": "Rosario, Santa Fe, Argentina",
+      "logo": "https://media.licdn.com/dms/image/C560BAQGQQftqb5zRrw/company-logo_200_200/0/1628516787491?e=1680134400&v=beta&t=1hL_2kVhtpryOkFilUMwnxarNCdjnXM2Muh-Bt6uxAg",
+      "reference": ""
+    }
+  ],
+
+  "showCredential": [{ "label": "Montrer Justificatif" }],
+
+  "showReference": [{ "label": "Afficher Référence" }],
+
+  "projects": [
+    {
+      "idProj": "ur10-trafos-bgh",
+      "title": "Installation d'un robot collaboratif pour manipuler transformateurs",
+      "initDate": "11/2021",
+      "finishDate": "03/2022",
+      "description": "Dans une chaîne de production de fours à micro-ondes, l'un des postes est dédié au montage et à la fixation des transformateurs. Dans cette position, l'opérateur déplace un transformateur de la palette correspondante vers un support de boulonnage. Ce transformateur pèse entre 3,5Kg et 5Kg, et pour le poser sur le support l'opérateur doit faire un tour de 90°, ce qui n'est pas recommandé d'un point de vue ergonomique. Afin de prévenir les blessures à l'opérateur, un robot collaboratif (Cobot) a été ajouté au lieu de travail pour aider l'opérateur dans les tâches répétitives et le levage de charges lourdes. A l'aide d'une caméra qui effectue un traitement d'image, le robot détecte le transformateur sur la palette et l'atteint jusqu'au support de vis. Pour mener à bien le projet, il a fallu budgétiser le projet, re-concevoir le travail, programmer le robot collaboratif, modéliser en 3D et fabriquer la pince supplémentaire qui soulève le transformateur, programmer la caméra qui détecte le transformateur, fabriquer le panneau de boutons pour la manipulation du cobot avec son électronique et l'installation du robot collaboratif avec son suivi respectif jusqu'à son bon fonctionnement. Il s'agit d'un travail d'équipe mené en collaboration avec tous les secteurs de l'entreprise (Ingénierie des Automatismes et des Essais, Ingénierie des Procédés, Production, Logistique, Service Médical, Sécurité et Hygiène, et opérateurs).",
+      "entreprise": "BGH",
+      "place": "Rio Grande, Tierra del Fuego, Argentina",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_de_BGH.svg/1200px-Logo_de_BGH.svg.png",
+      "category": "Automatisation",
+      "info": "https://youtu.be/74mzFb2mVGg"
+    },
+    {
+      "idProj": "sdav-fceia",
+      "title": "Conception d'un Simulateur d'amplificateur à valve utilisant Raspberry Pi",
+      "initDate": "06/2018",
+      "finishDate": "02/2021",
+      "description": "Théorie de fonctionnement des amplificateurs à tubes. - Etude de leurs étages caractéristiques, de leurs circuits correspondants et de leur réponse en fréquence en vue de leur numérisation ultérieure et de leur utilisation en temps réel - Théorie de fonctionnement et de réponse en fréquence des effets sonores (delay, flanger, distorsion) et de leurs circuits électroniques pour leur numérisation et utilisation en temps réel - Passage de circuits électroniques analogiques à leur équivalent numérique par des méthodes numériques - Traitement de signaux analogiques - Exécution de méthodes numériques sous Matlab pour test - Exécution de méthodes numériques en langage C - Exécution de code programmé dans le logiciel Pure Data à l'aide de bibliothèques personnalisées - Application logicielle en temps réel utilisant Raspberry Pi et Pi Sound - Interface graphique en temps réel de l'ensemble - Effets sonores et amplis à lampes - Test de chaque étage d'amplis à lampes, d'effets sonores et des deux parties travaillant ensemble. - Comparaison et contraste de la réponse en fréquence analogique versus la réponse en fréquence numérique - Préparation d'un rapport final avec théorie appliquée, codes, essais écrits, conclusions finales et améliorations à apporter.",
+      "entreprise": "FCEIA - UNR",
+      "place": "Rosario, Santa Fe, Argentina",
+      "logo": "https://www.uma.es/media/cache/16/6f/166f14c7891781044c80d3ce0231d47d.jpg",
+      "category": "Universitaires",
+      "info": "https://drive.google.com/file/d/1ttUN6U8VqlRsTO_pqDmre4AX2d9Opdw-/view?usp=share_link"
+    },
+    {
+      "idProj": "sdls-enib",
+      "title": "Simulation de la lumière du soleil avec des LED haute puissance pour tester les panneaux solaires",
+      "initDate": "09/2019",
+      "finishDate": "12/2019",
+      "description": "Théorie du spectre de la lumière solaire - Théorie du fonctionnement des panneaux solaires. - Théorie de la technologie LED - Choix des LED pour obtenir le maximum de puissance du panneau solaire - Choix de la source d'énergie - Choix des composants en fonction des exigences à respecter, création d'une liste avec prix et quantité, commande des composants - Design et plaque impression et soudure de composants - Contrôle de l'intensité lumineuse au moyen d'un PWM généré avec un microcontrôleur STM32 programmé en langage C - Interface graphique envoyant des données via le port série du microcontrôleur. - Test de la carte électronique avec le microcontrôleur pour obtenir le maximum de puissance dans le panneau solaire - Travail en équipe avec deux étudiants de nationalités différentes, qui parlent anglais et français. - Rapport final sur le travail effectué, les inconvénients et les principales conclusions",
+      "entreprise": "ENIB",
+      "place": "Brest, Bretagne, France",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_ENIB_2012.png",
+      "category": "Universitaires",
+      "info": "https://drive.google.com/file/d/10-C7RD-DkKWiirdrCyHWeHO62zNa1-Vs/view?usp=share_link"
+    },
+    {
+      "idProj": "domotica-unr",
+      "title": "Domotique avec Raspberry Pi et Arduino",
+      "initDate": "04/2018",
+      "finishDate": "06/2018",
+      "description": "Contrôle des lumières dans différentes parties d'une maison, ventilateurs, pompes de piscine et mesure de la température via une page Web accessible depuis n'importe quel appareil (PC, smartphone, tablette) - Utilisation de Raspberry Pi comme serveur - Utilisation d'Arduino comme esclave - Programmation en langage NodeRed pour la création de l'interface graphique - Assemblage du circuit électronique et utilisation du capteur de température DHT11 - Envoi des données via le port série du Raspberry Pi vers Arduino pour établir la communication avec le clavier - Rapport final montrant les résultats, les inconvénients et les conclusions",
+      "entreprise": "UNR",
+      "place": "Rosario, Santa Fe, Argentina",
+      "logo": "https://www.uma.es/media/cache/16/6f/166f14c7891781044c80d3ce0231d47d.jpg",
+      "category": "Universitaires",
+      "info": "https://drive.google.com/file/d/1PJo9iK01xhjhlczrM2IwwzPklsVTC9oE/view?usp=share_link"
+    }
+  ],
+
+  "categoriesProjects": [{ "label": "Toutes" }, { "label": "Universitaires" }, { "label": "Automatisation" }],
+
+  "showMore": [{ "label": "Afficher Plus " }],
+
+  "contact": {
+    "title": "Écrivez un message et je vous contacterai 👇",
+    "name": "NOM ET PRÉNOM",
+    "email": "EMAIL",
+    "phone": "TÉLÉPHONE",
+    "message": "MESSAGE",
+    "send": "ENVOYER 📧 "
+  },
+
+  "footer": { "label": "Suivez-moi sur mes réseaux sociaux pour plus d'informations" },
+
+  "categories": { "label": "Catégories" }
+}

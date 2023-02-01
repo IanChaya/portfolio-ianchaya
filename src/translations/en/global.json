@@ -1,0 +1,469 @@
+{
+  "introductionText": {
+    "paragraph1": "Hello, my name is Ian Chaya.",
+    "paragraph2": "I am 27 years old, I was born in Argentina but I also have Croatian nationality.",
+    "paragraph3": "I am an Electronic Engineer, Diploma in Digital Transformation and Industries 4.0 and Front-end Developer.",
+    "paragraph4": "I have experience in Automation, Embedded Systems Programming, Electronic Circuit Design, Signal Processing and Front-end Web Development.",
+    "paragraph5": "I am a proactive and enthusiastic person. I like to work in a team and I adapt quickly to changes.",
+    "paragraph6": "I am currently a member of the Automation and Test Engineering team at BGH SA"
+  },
+  "pages": {
+    "education": "Education",
+    "work-experiences": "Work Experiences",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "educations": [
+    {
+      "idEd": "unr",
+      "title": "Electronic Engineer",
+      "initDate": "03/2013",
+      "finishDate": "03/2021",
+      "description": "Engineering Sciences: Power Electronics, Automation, Embedded Systems, Electrical Engineering, Audio Fundamentals, Telecommunications, IOT, Signal Processing, Applied Mathematics. Team Final Project (Valve Amplifier Simulator with Raspberry Pi)",
+      "place": "Universidad Nacional de Rosario",
+      "logo": "https://www.uma.es/media/cache/16/6f/166f14c7891781044c80d3ce0231d47d.jpg",
+      "certificate": "https://drive.google.com/file/d/1ypLem2J_29DunfUes0IG1mkmIq8FM5el/view",
+      "category": "Principal"
+    },
+    {
+      "idEd": "enib",
+      "title": "Internacional Exchange",
+      "initDate": "08/2019",
+      "finishDate": "09/2020",
+      "description": "Electronic and Computer Engineering: Programming in C language, Microprocessors – Quality and Environmental Quality, Marketing, Human Resources – Team Project (Sunlight Simulator for testing solar panels) and Engineer Internship (ZF Group).",
+      "place": "ENIB",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_ENIB_2012.png",
+      "certificate": "https://drive.google.com/file/d/1Ub_Ker34NG33J5H9SZCXsvsN2oWF9IbV/view?usp=share_link",
+      "category": "Principal"
+    },
+    {
+      "idEd": "coderhouse",
+      "title": "Front-End Developer",
+      "initDate": "05/2022",
+      "finishDate": "11/2022",
+      "description": "Web Development: HTML, CSS, Flexbox, Grids, Animations, Bootstrap, SASS, Git, Github, SEO, Servers | Javascript: Syntax, Variables, Control Flows, Loops/Iterations, Functions, Objects, Arrays, JSON, Storage, DOM, Events, JQuery, AJAX, SPA | React JS: Project creation, JSX and transpilling, Components, Promises, Asynchrony, MAP, APIs, Routing and Navigation, Events, Context, Rendering, Firebase",
+      "place": "Coderhouse",
+      "logo": "https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1",
+      "certificate": "https://drive.google.com/file/d/1KYu8xga0bWuw1wqKp991n9WeIPHT-ESI/view?usp=share_link",
+      "category": "Principal"
+    },
+    {
+      "idEd": "uia-utn",
+      "title": "Diploma in Industries 4.0",
+      "initDate": "08/2022",
+      "finishDate": "12/2022",
+      "description": "Data Analytics, Cloud Computing, Cybersecurity, Additive Manufacturing, Robotics, Project Management, Lean Management, Innovation, Leadership and Social Responsibility, Didactic and Pedagogical Transfer, Realization of a Digital Transformation Project.",
+      "place": "UIA - UTN",
+      "logo": "../uia-utn-rutax.png",
+      "certificate": "",
+      "category": "Principal"
+    },
+    {
+      "idEd": "universal-robots-advanced",
+      "title": "Advanced Training in handling Cobots",
+      "initDate": "11/2022",
+      "finishDate": "11/2022",
+      "description": "Concepts and structure of programs - Fundamentals of URScript - Pose variables - Coordinate systems - Advanced use of the TCP - Conveyor belt tracking - Force control (advanced).",
+      "place": "Universal Robots",
+      "logo": "../universal-robots.png",
+      "certificate": "https://drive.google.com/file/d/1IvtMwlW3pd4jEMUNC_aRQA6Zhr61gL40/view",
+      "category": "Courses"
+    },
+    {
+      "idEd": "universal-robots-basic",
+      "title": "Basic Training in handling Cobots",
+      "initDate": "09/2021",
+      "finishDate": "09/2021",
+      "description": "Pick and place application - Security settings - Optimize a pick and place application - Easy startup - Program flow - Palletizing - Force control (simple) - Process application with operator selection - Flexible redistribution - Implementation plan - Resources online",
+      "place": "Universal Robots",
+      "logo": "../universal-robots.png",
+      "certificate": "https://drive.google.com/file/d/1FZbkQCeMlsIdvqVBT7RPR8k-NvUi1eX7/view?usp=sharing",
+      "category": "Courses"
+    },
+    {
+      "idEd": "tgmpgymep-inti",
+      "title": "Management Technologies for Productive Improvement",
+      "initDate": "04/2022",
+      "finishDate": "05/2022",
+      "description": "7 Losses (What is productivity. Operations and/or inputs that add value - Classification of the 7 losses that threaten industrial productivity - Description of each one of these losses. Actions to reduce their effect) | QC 7 (Quality. Concepts and definitions - 7 classic quality tools - 7 new quality tools - Uses and examples) | Kaizen (Problem solving tool (Eight steps-PDCA-A3) - Methodology. Use and management - Continuous Improvement)",
+      "place": "INTI",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/INTI_Logo_2019.png/220px-INTI_Logo_2019.png",
+      "certificate": "https://drive.google.com/file/d/1O7rk3AypBEV_KSBiB9rL7YkUltu6fqXj/view",
+      "category": "Courses"
+    },
+    {
+      "idEd": "scrum-utn",
+      "title": "Scrum Master - Agile methodologies ",
+      "initDate": "02/2022",
+      "finishDate": "04/2022",
+      "description": "Application of techniques based on agile methodologies - Review and explanation of the agile manifesto - When to apply an agile methodology? - Formation of customer-team commitment. - How to apply an agile methodology? - Documentation. Transparency and Collaboration. - Alignment of SCRUM to the principles of agile methodologies. - Tour of different frameworks. - What are the roles in a SCRUM team? - Articulation of roles with the principles of collaboration and transparency of agile methodologies - Configuration and prioritization of the repository of requirements. - MoSCoW method. - Workflows. - Negotiation of the concept of fact. - Alignment of the workflow to the concept of fact. - What are the meetings? - Who participates in the meetings? - What objectives are pursued in the meetings? - Meetings: User Story Refinement meeting, Planning meeting, Daily meetings, Product Review meeting (Demo), Retrospective meeting. - Planning work iterations. - Application of the workflow to the committed requirements. - Progress tracking. - Iteration tracking metrics. Iteration closure metrics. - Cumulative metrics. - Speed and capacity of equipment as incident variables in the iteration.",
+      "place": "UTN FRRe",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/UTN_FRRE.png",
+      "certificate": "https://drive.google.com/file/d/1vT-CwEat0M63JDYmrxLdvK_FNiXtYuKV/view",
+      "category": "Courses"
+    },
+    {
+      "idEd": "ergonomia-adea",
+      "title": "Ergonomics Training",
+      "initDate": "08/2021",
+      "finishDate": "12/2021",
+      "description": "TRAINING IN ERGONOMICS with skills to identify the risk factors present in the Ergonomics Protocol - Know the fields of action of Ergonomics, as well as its areas of intervention - Understand the proactive vision of Ergonomics. Identify risk factors for ergonomics in the workplace, through the Ergonomics protocol",
+      "place": "AdEA",
+      "logo": "../AdEA.png",
+      "certificate": "https://drive.google.com/file/d/1VbhhjAcawhDHi-k4FZDbW0GdcF1R1T4S/view",
+      "category": "Courses"
+    },
+    {
+      "idEd": "neumatica-utn",
+      "title": "Pneumatic Installations and Electropneumatic Controls",
+      "initDate": "09/2021",
+      "finishDate": "12/2021",
+      "description": "Development of the technique of compressed air. Physical foundations. Compressors, types and selection. Compressed air distribution, sizing. Preparation of compressed air: separation of water, drying. Rectilinear and rotary action pneumatic actuators. Symbols according to ISO 1219. Calculation of forces and consumption. Directional, flow, pressure, blocking and closing valves. internal constitution. Symbology according to ISO 1219 standard. Composite valves. Pneumatic timers. Practical theoretical resolution of sequential circuits. Assembly of pneumatic circuits.",
+      "place": "UTN",
+      "logo": "https://www.frp.utn.edu.ar/info2/wp-content/uploads/2018/08/utn-nacional.jpg",
+      "certificate": "https://drive.google.com/file/d/1wP7RdWs-SK_YcSAd8xQ3zt56TNkgDQXr/view?usp=sharing",
+      "category": "Courses"
+    },
+    {
+      "idEd": "delf-b2",
+      "title": "DELF B2 (87/100)",
+      "initDate": "09/2018",
+      "finishDate": "09/2019",
+      "description": "B2 level skills: Is able to understand the main ideas of complex texts that deal with both concrete and abstract topics, even if they are of a technical nature, as long as they are within their field of specialization - Can interact with native speakers with a sufficient degree of fluidity and naturalness, so that communication is carried out without effort on the part of the interlocutors - Can produce clear and detailed texts on various topics, as well as defend a point of view on general topics, indicating the pros and cons of the different options .",
+      "place": "UTN",
+      "logo": "../delf-b2.png",
+      "certificate": "https://drive.google.com/file/d/1NOyCVfPThSK5-d9dwKLPguvMVtmHiMkL/view",
+      "category": "Languages"
+    },
+    {
+      "idEd": "toeic",
+      "title": "TOEIC (960/990)",
+      "initDate": "01/2020",
+      "finishDate": "01/2022",
+      "description": "Result equivalent to a C1 level",
+      "place": "ETS",
+      "logo": "https://trucoslondres.com/wp-content/uploads/2016/08/LOGO-TOEIC.png",
+      "certificate": "https://drive.google.com/file/d/1884EQ6mJcEt3vAuFIrf89H6VJ3Rm2rKu/view?usp=sharing",
+      "category": "Languages"
+    },
+    {
+      "idEd": "marketing-digital-google",
+      "title": "Digital Marketing Fundamentals",
+      "initDate": "03/2021",
+      "finishDate": "04/2021",
+      "description": "Data analysis and metrics - Business strategy - Content marketing - Display advertising - E-commerce - Email marketing - Local marketing - Mobile - SEM - SEO - Social networks - Video - Web optimization",
+      "place": "Google Activate",
+      "logo": "https://pbs.twimg.com/profile_images/1179320706926092289/k5XDmxOF_400x400.jpg",
+      "certificate": "https://drive.google.com/file/d/15SmoscOYyCx0w3miZSdXMKaoyZehkECc/view?usp=share_link",
+      "category": "Courses"
+    }
+  ],
+
+  "categoriesEducation": [
+    { "label": "All" },
+    { "label": "Principal" },
+    { "label": "Courses" },
+    { "label": "Languages" }
+  ],
+
+  "skills": [
+    {
+      "idSkill": "javascript",
+      "title": "Javascript",
+      "category": "Web Programming",
+      "logo": "../js.png",
+      "rating": "3"
+    },
+    {
+      "idSkill": "html",
+      "title": "HTML",
+      "category": "Web Programming",
+      "logo": "../html-5.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "css",
+      "title": "CSS",
+      "category": "Web Programming",
+      "logo": "../css-3.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "react",
+      "title": "React",
+      "category": "Web Programming",
+      "logo": "../react.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "bootstrap",
+      "title": "Bootstrap",
+      "category": "Web Programming",
+      "logo": "../bootstrap.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "material-ui",
+      "title": "Material UI",
+      "category": "Web Programming",
+      "logo": "../material-ui.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "matlab",
+      "title": "MATLAB",
+      "category": "Programming",
+      "logo": "../Matlab_Logo.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "c",
+      "title": "C",
+      "category": "Programming",
+      "logo": "../letra-c.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "python",
+      "title": "Python",
+      "category": "Programming",
+      "logo": "../python.jpeg",
+      "rating": "3"
+    },
+    {
+      "idSkill": "github",
+      "title": "Github",
+      "category": "Web Programming",
+      "logo": "../github.png",
+      "rating": "3.5"
+    },
+    {
+      "idSkill": "photoshop",
+      "title": "Photoshop",
+      "category": "Adobe",
+      "logo": "../photoshop.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "premiere",
+      "title": "Premiere",
+      "category": "Adobe",
+      "logo": "../premiere-pro.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "universal-robots",
+      "title": "Polyscope - UR",
+      "category": "Robotics",
+      "logo": "../universal-robots.png",
+      "rating": "4.5"
+    },
+    {
+      "idSkill": "fusion360",
+      "title": "Fusion 360",
+      "category": "3D Modeling",
+      "logo": "../fusion-360.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "prusaslicer",
+      "title": "Prusa Slicer",
+      "category": "3D Modeling",
+      "logo": "../prusaslicer.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "eagle",
+      "title": "Eagle",
+      "category": "PCB Design",
+      "logo": "../eagle.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "word",
+      "title": "Word",
+      "category": "Office",
+      "logo": "../word.png",
+      "rating": "4.5"
+    },
+    {
+      "idSkill": "excel",
+      "title": "Excel",
+      "category": "Office",
+      "logo": "../excel.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "powerpoint",
+      "title": "PowerPoint",
+      "category": "Office",
+      "logo": "../powerpoint.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "step7",
+      "title": "Step 7",
+      "category": "PLC Programming",
+      "logo": "../step-7.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "tiaportal",
+      "title": "TIA Portal",
+      "category": "PLC Programming",
+      "logo": "../tia-portal.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "wincc",
+      "title": "WinCC",
+      "category": "PLC Programming",
+      "logo": "../wincc.jpeg",
+      "rating": "4"
+    },
+    {
+      "idSkill": "raspberry",
+      "title": "Raspberry Pi",
+      "category": "Microcontrollers",
+      "logo": "../raspberry-pi.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "arduino",
+      "title": "Arduino",
+      "category": "Microcontrollers",
+      "logo": "../arduino.png",
+      "rating": "4"
+    },
+    {
+      "idSkill": "stm32",
+      "title": "STM32 IDE",
+      "category": "Microcontrollers",
+      "logo": "../stm32.png",
+      "rating": "4"
+    }
+  ],
+
+  "categoriesSkills": [
+    { "label": "All" },
+    { "label": "Web Programming" },
+    { "label": "Programming" },
+    { "label": "Microcontrollers" },
+    { "label": "Robotics" },
+    { "label": "PLC Programming" },
+    { "label": "3D Modeling" },
+    { "label": "Adobe" },
+    { "label": "Office" },
+    { "label": " PCB Design" }
+  ],
+
+  "experiences": [
+    {
+      "idExp": "bgh",
+      "title": "Automation and Test Engineer",
+      "initDate": "06/2021",
+      "finishDate": "02/2023",
+      "description": "Development of Industrial Automation Projects and Test. Analysis of Plant operation with the aim of solving problems and implementing improvements. Budgeting, Prototype Design, Commissioning and Project Monitoring. 3D Modeling and Printing - Fusion 360, Prusa Slicer. Design and Printing of Electronic Circuits - Eagle. Programming of Microcontrollers in conjunction with sensors and actuators. Programming Collaborative Robots (Universal Robots) - Polyscope",
+      "entreprise": "BGH S.A.",
+      "place": "Río Grande, Tierra del Fuego, Argentina",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_de_BGH.svg/1200px-Logo_de_BGH.svg.png",
+      "reference": "https://drive.google.com/file/d/1gNf_tYl6lRhhgSKPQIQje1RJwO_CTyDx/view?usp=share_link"
+    },
+    {
+      "idExp": "zf",
+      "title": "R&D Engineer",
+      "initDate": "03/2020",
+      "finishDate": "09/2022",
+      "description": "Data Acquisition through radar development boards, Radar Signal Processing, Development of an App to analyze the radar signal processing chain – MATLAB, App Designer, mmWave Studio, Hardware Accelerator.",
+      "entreprise": "ZF Autocruise",
+      "place": "Brest, Francia",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/ZF_logo_STD_Blue_3CC.svg/640px-ZF_logo_STD_Blue_3CC.svg.png",
+      "reference": "https://drive.google.com/file/d/1OEZ2E5W1BoFsvTeOMgXN1XG2ullADVxw/view?usp=share_link"
+    },
+    {
+      "idExp": "eproc",
+      "title": "Automation Engineer",
+      "initDate": "04/2021",
+      "finishDate": "06/2021",
+      "description": "Development of Industrial Automation Projects: PLC, HMI and SCADA programming. Agile Methodologies (Scrum) – Step7, TIA Portal, winCC.",
+      "entreprise": "Eproc",
+      "place": "Rosario, Santa Fe, Argentina",
+      "logo": "https://media.licdn.com/dms/image/C560BAQGQQftqb5zRrw/company-logo_200_200/0/1628516787491?e=1680134400&v=beta&t=1hL_2kVhtpryOkFilUMwnxarNCdjnXM2Muh-Bt6uxAg",
+      "reference": ""
+    }
+  ],
+
+  "showCredential": [{ "label": "Show Credential" }],
+
+  "showReference": [{ "label": "Show Reference" }],
+
+  "projects": [
+    {
+      "idProj": "ur10-trafos-bgh",
+      "title": "Installation of Collaborative Robot to manipulate Transformers",
+      "initDate": "11/2021",
+      "finishDate": "03/2022",
+      "description": "In a Microwave Oven production line, one of the positions is dedicated to the Assembly and Fixing of Transformers. In this position, the operator moves a transformer from the corresponding Pallet to a Bolting Support. This transformer weighs between 3.5Kg and 5Kg, and in order to place it on the support the operator has to make a 90° turn, which is not recommended ergonomically speaking. In order to prevent injuries to the operator, a Collaborative Robot (Cobot) was added to the workplace to help the operator with repetitive tasks and lifting Heavy Loads. Using a camera that performs image processing, the robot detects the transformer on the pallet and reaches it to the screw support. To carry out the project, it was necessary to budget the project, re-design the job, program the collaborative robot, model in 3D and make the additional clamp that lifts the transformer, program the camera that detects the transformer, make the button panel for handling of the cobot together with its electronics and installing the collaborative robot with its respective follow-up until it works correctly. This was a team effort that was carried out in conjunction with all areas of the Company (Automation and Test Engineering, Process Engineering, Production, Logistics, Medical Service, Safety and Hygiene, and operators).",
+      "entreprise": "BGH",
+      "place": "Rio Grande, Tierra del Fuego, Argentina",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_de_BGH.svg/1200px-Logo_de_BGH.svg.png",
+      "category": "Automation",
+      "info": "https://youtu.be/74mzFb2mVGg"
+    },
+    {
+      "idProj": "sdav-fceia",
+      "title": "Tube Amplifier Simulator using Raspberry Pi",
+      "initDate": "06/2018",
+      "finishDate": "02/2021",
+      "description": "Theory of operation of tube amplifiers. - Study of their characteristic stages, their corresponding circuits and their frequency response with a view to their subsequent digitization and use in real time - Theory of operation and frequency response of sound effects (delay, flanger, distortion) and their electronic circuits for their subsequent digitization and use in real time - Change of analog electronic circuits to their digital equivalent using numerical methods - Processing of analog signals - Execution of numerical methods in Matlab for testing - Execution of numerical methods in C language - Execution of code programmed in Pure Data software using custom libraries - Real-time software application using Raspberry Pi and Pi Sound - Real-time graphical interface of the set - Sound effects and tube amps - Testing each stage of tube amps, sound effects and both parties working together. - Comparison and contrast of the analog frequency response versus the digital frequency response - Preparation of a final report with applied theory, codes, written essays, final conclusions and improvements to be made.",
+      "entreprise": "FCEIA - UNR",
+      "place": "Rosario, Santa Fe, Argentina",
+      "logo": "https://www.uma.es/media/cache/16/6f/166f14c7891781044c80d3ce0231d47d.jpg",
+      "category": "College",
+      "info": "https://drive.google.com/file/d/1ttUN6U8VqlRsTO_pqDmre4AX2d9Opdw-/view?usp=share_link"
+    },
+    {
+      "idProj": "sdls-enib",
+      "title": "Simulation of Sunlight with high power LEDs for testing solar panels",
+      "initDate": "09/2019",
+      "finishDate": "12/2019",
+      "description": "Theory of the spectrum of sunlight - Theory of the operation of solar panels. - Theory of LED technology - Choice of LEDs to obtain maximum power from the solar panel - Choice of energy source - Choice of components according to the requirements to be met, creation of a list with price and quantity, ordering of components - Design and plate printing and component soldering - Light intensity control by means of a PWM generated with an STM32 microcontroller programmed in C language - Graphical interface sending data through the serial port of the microcontroller. - Test of the electronic board with the microcontroller to obtain the maximum power in the solar panel - Teamwork with two students of different nationalities, who speak English and French. - Final report on the work carried out, the drawbacks and the main conclusions",
+      "entreprise": "ENIB",
+      "place": "Brest, Bretagne, France",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_ENIB_2012.png",
+      "category": "College",
+      "info": "https://drive.google.com/file/d/10-C7RD-DkKWiirdrCyHWeHO62zNa1-Vs/view?usp=share_link"
+    },
+    {
+      "idProj": "domotica-unr",
+      "title": "Home automation with Raspberry Pi and Arduino",
+      "initDate": "04/2018",
+      "finishDate": "06/2018",
+      "description": "Control of lights in different parts of a house, fans, pool pumps and temperature measurement through a web page accessible from any device (PC, smartphone, tablet) - Use of Raspberry Pi as server - Use of Arduino as slave - Programming in NodeRed language for the creation of the graphical interface - Assembly of the electronic circuit and use of the DHT11 temperature sensor - Sending data through the serial port of the Raspberry Pi to Arduino to establish communication with the keyboard - Final report showing results , disadvantages and conclusions",
+      "entreprise": "UNR",
+      "place": "Rosario, Santa Fe, Argentina",
+      "logo": "https://www.uma.es/media/cache/16/6f/166f14c7891781044c80d3ce0231d47d.jpg",
+      "category": "College",
+      "info": "https://drive.google.com/file/d/1PJo9iK01xhjhlczrM2IwwzPklsVTC9oE/view?usp=share_link"
+    }
+  ],
+
+  "categoriesProjects": [{ "label": "All" }, { "label": "College" }, { "label": "Automation" }],
+
+  "showMore": [{ "label": "Show More " }],
+
+  "contact": {
+    "title": "Write a message and I will contact you shortly 👇",
+    "name": "NAME AND SURNAME",
+    "email": "EMAIL",
+    "phone": "PHONE",
+    "message": "MESSAGE",
+    "send": "SEND 📧 "
+  },
+
+  "footer": { "label": "Follow me on my social networks for more information" },
+
+  "categories": { "label": "Categories" }
+}
