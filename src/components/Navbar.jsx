@@ -13,8 +13,8 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import argentinianFlag from "../argentina-64.png";
-import EEUUFlag from "../france-64.png";
-import frenchFlag from "../united states-64.png";
+import EEUUFlag from "../united states-64.png";
+import frenchFlag from "../france-64.png";
 import ianchayaLogo from "../ianchaya5.png"
 
 
@@ -49,7 +49,7 @@ function Navbar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-            <Link style={{ textDecoration: "none" }} to={"/"}>
+            <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya"}>
               <img
                 class="ian-chaya"
                 src={ianchayaLogo}
