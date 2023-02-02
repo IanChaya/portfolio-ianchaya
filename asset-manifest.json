@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-ianchaya/static/css/main.7e8d7429.css",
+    "main.js": "/portfolio-ianchaya/static/js/main.1284dd3b.js",
+    "static/js/787.59750f1a.chunk.js": "/portfolio-ianchaya/static/js/787.59750f1a.chunk.js",
+    "index.html": "/portfolio-ianchaya/index.html",
+    "static/media/wave-haikei23.svg": "/portfolio-ianchaya/static/media/wave-haikei23.76a9a59ea1d1d824c6a677b9f07a75c3.svg",
+    "main.7e8d7429.css.map": "/portfolio-ianchaya/static/css/main.7e8d7429.css.map",
+    "main.1284dd3b.js.map": "/portfolio-ianchaya/static/js/main.1284dd3b.js.map",
+    "787.59750f1a.chunk.js.map": "/portfolio-ianchaya/static/js/787.59750f1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e8d7429.css",
+    "static/js/main.1284dd3b.js"
+  ]
+}
