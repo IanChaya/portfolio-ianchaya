@@ -20,14 +20,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/portfolio-ianchaya/" element={<Home />} />
-          <Route path="/Education" element={<Education />} />
-          <Route path="/Education/:idEd" element={<EducationDetail />} />
-          <Route path="/Experiences" element={<Experiences />} />
-          <Route path="/Experiences/:idExp" element={<ExperiencesDetail />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Projects/:idProj" element={<ProjectsDetail />} />
-          <Route path="/Skills" element={<Skills />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/portfolio-ianchaya/Education" element={<Education />} />
+          <Route path="/portfolio-ianchaya/Education/:idEd" element={<EducationDetail />} />
+          <Route path="/portfolio-ianchaya/Experiences" element={<Experiences />} />
+          <Route path="/portfolio-ianchaya/Experiences/:idExp" element={<ExperiencesDetail />} />
+          <Route path="/portfolio-ianchaya/Projects" element={<Projects />} />
+          <Route path="/portfolio-ianchaya/Projects/:idProj" element={<ProjectsDetail />} />
+          <Route path="/portfolio-ianchaya/Skills" element={<Skills />} />
+          <Route path="/portfolio-ianchaya/Contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

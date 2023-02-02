@@ -24,11 +24,11 @@ function Navbar() {
   const [t, i18n] = useTranslation("global");
 
   const pages = [
-    { label: t("pages.education"), link: "/Education" },
-    { label: t("pages.work-experiences"), link: "/Experiences" },
-    { label: t("pages.skills"), link: "/Skills" },
-    { label: t("pages.projects"), link: "/Projects" },
-    { label: t("pages.contact"), link: "/Contact" },
+    { label: t("pages.education"), link: "/portfolio-ianchaya/Education" },
+    { label: t("pages.work-experiences"), link: "/portfolio-ianchaya/Experiences" },
+    { label: t("pages.skills"), link: "/portfolio-ianchaya/Skills" },
+    { label: t("pages.projects"), link: "/portfolio-ianchaya/Projects" },
+    { label: t("pages.contact"), link: "/portfolio-ianchaya/Contact" },
   ];
 
   const handleOpenNavMenu = (event) => {
