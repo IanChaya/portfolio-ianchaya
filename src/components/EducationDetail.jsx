@@ -1,33 +1,25 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import { formaciones } from "../Data/Data.js";
-
+import { Grid, Link as ExtLink } from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import CardActions from "@mui/material/CardActions";
-import Box from "@mui/material/Box";
-import { Grid } from "@mui/material";
-import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { BsBoxArrowUpRight, BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { Link as ExtLink } from "@mui/material";
-import { useNavigate} from "react-router-dom";
-
-import {useTranslation} from "react-i18next";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function EducactionDetail() {
-
   const { idEd } = useParams();
 
   const [t, i18n] = useTranslation("global");
 
-  let educations = t('educations', { returnObjects: true });
-  let showCredential = t('showCredential', { returnObjects: true });
+  let educations = t("educations", { returnObjects: true });
+  let showCredential = t("showCredential", { returnObjects: true });
 
-  let education = educations.find((ed) => ed.idEd == idEd);
+  let education = educations.find((ed) => ed.idEd === idEd);
   let navigate = useNavigate();
 
   return (
@@ -38,7 +30,11 @@ export default function EducactionDetail() {
             <Grid container spacing={2}>
               <Grid item xs={4} sx={{ alignContent: "center" }}>
                 <Link>
-                  <BsFillArrowLeftCircleFill onClick={() => navigate(-1)} size="3rem" style={{ color: "0069cc", paddingTop:"0.5rem", paddingLeft:"0.5rem" }} />
+                  <BsFillArrowLeftCircleFill
+                    onClick={() => navigate(-1)}
+                    size="3rem"
+                    style={{ color: "0069cc", paddingTop: "0.5rem", paddingLeft: "0.5rem" }}
+                  />
                 </Link>
                 <div>
                   <CardMedia
@@ -70,7 +66,7 @@ export default function EducactionDetail() {
                   <ExtLink target="_blank" href={education.certificate} style={{ textDecoration: "none" }}>
                     <Button variant="outlined" size="small">
                       <div>
-                      {showCredential[0].label} <BsBoxArrowUpRight />
+                        {showCredential[0].label} <BsBoxArrowUpRight />
                       </div>
                     </Button>
                   </ExtLink>

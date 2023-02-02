@@ -1,31 +1,23 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-// import { experiencias } from "../Data/Data.js";
-
+import { Grid, Link as ExtLink } from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import CardActions from "@mui/material/CardActions";
-import Box from "@mui/material/Box";
-import { Grid } from "@mui/material";
-import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
+import React from "react";
 import { BsBoxArrowUpRight, BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { Link as ExtLink } from "@mui/material";
-import { useNavigate} from "react-router-dom";
-
-import {useTranslation} from "react-i18next";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function ExperiencesDetail() {
   const { idExp } = useParams();
 
   const [t, i18n] = useTranslation("global");
 
-  let experiences = t('experiences', { returnObjects: true });
+  let experiences = t("experiences", { returnObjects: true });
   let showReference = t("showReference", { returnObjects: true });
-
 
   console.log(idExp);
 
@@ -40,7 +32,11 @@ export default function ExperiencesDetail() {
             <Grid container spacing={2}>
               <Grid item xs={4} sx={{ alignContent: "center" }}>
                 <Link>
-                  <BsFillArrowLeftCircleFill onClick={() => navigate(-1)} size="3rem" style={{ color: "0069cc", paddingTop:"0.5rem", paddingLeft:"0.5rem" }} />
+                  <BsFillArrowLeftCircleFill
+                    onClick={() => navigate(-1)}
+                    size="3rem"
+                    style={{ color: "0069cc", paddingTop: "0.5rem", paddingLeft: "0.5rem" }}
+                  />
                 </Link>
                 <div>
                   <CardMedia
@@ -53,7 +49,7 @@ export default function ExperiencesDetail() {
                       height: "15rem",
                       objectFit: "contain",
                       alignContent: "center",
-                      justifyContent:"center",
+                      justifyContent: "center",
                     }}
                   />
                 </div>
@@ -69,24 +65,15 @@ export default function ExperiencesDetail() {
                   </Typography>
                   <br />
                 </CardContent>
-                <CardActions sx={{ }}>
-                        <ExtLink target="_blank" href={experience.reference} style={{ textDecoration: "none" }}>
-                          <Button variant="outlined" size="small">
-                            <div>
-                            {showReference[0].label} <BsBoxArrowUpRight />
-                            </div>
-                          </Button>
-                        </ExtLink>
-                      </CardActions>
-                {/* <CardActions sx={{}}>
-                  <ExtLink target="_blank" href={formacion.certificate} style={{ textDecoration: "none" }}>
+                <CardActions sx={{}}>
+                  <ExtLink target="_blank" href={experience.reference} style={{ textDecoration: "none" }}>
                     <Button variant="outlined" size="small">
                       <div>
-                        Mostrar Credencial <BsBoxArrowUpRight />
+                        {showReference[0].label} <BsBoxArrowUpRight />
                       </div>
                     </Button>
                   </ExtLink>
-                </CardActions> */}
+                </CardActions>
               </Grid>
             </Grid>
           </Card>

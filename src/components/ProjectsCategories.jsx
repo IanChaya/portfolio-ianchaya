@@ -1,17 +1,15 @@
-import * as React from "react";
-import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import TextField from "@mui/material/TextField";
+import * as React from "react";
 import { useContext } from "react";
 import { Context } from "./ContextComponent";
-
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectsCategories() {
-  const { categoriesProjects, valueProjects, setValueProjects, inputValueProjects, setInputValueProjects } = useContext(Context);
+  const { valueProjects, setValueProjects, inputValueProjects, setInputValueProjects } = useContext(Context);
   const [t, i18n] = useTranslation("global");
-  let projectsCategories = t('categoriesProjects', { returnObjects: true });
-  
-  
+  let projectsCategories = t("categoriesProjects", { returnObjects: true });
+
   return (
     <div>
       <Autocomplete

@@ -1,12 +1,10 @@
-import * as React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
 import Link from "@mui/material/Link";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
+import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 import { useTranslation } from "react-i18next";
 
@@ -30,10 +28,6 @@ export default function StickyFooter() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        // position: "fixed",
-        // left: 0,
-        // bottom: 0,
-        // right: 0,
       }}
     >
       <CssBaseline />

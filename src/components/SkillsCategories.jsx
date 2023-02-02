@@ -1,15 +1,14 @@
-import * as React from "react";
-import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import TextField from "@mui/material/TextField";
+import * as React from "react";
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 import { Context } from "./ContextComponent";
 
-import {useTranslation} from "react-i18next";
-
 export default function SkillsCategories() {
-  const { categoriesSkills, valueSkills, setValueSkills, inputValueSkills, setInputValueSkills } = useContext(Context);
-
+  const { valueSkills, setValueSkills, inputValueSkills, setInputValueSkills } = useContext(Context);
   const [t, i18n] = useTranslation("global");
+  
   let skillsCategories = t('categoriesSkills', { returnObjects: true });
   
   return (

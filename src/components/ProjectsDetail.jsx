@@ -1,34 +1,25 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-// import { proyectos } from "../Data/Data.js";
-
+import { Grid, Link as ExtLink } from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import CardActions from "@mui/material/CardActions";
-import Box from "@mui/material/Box";
-import { Grid } from "@mui/material";
-import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { BsBoxArrowUpRight, BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { Link as ExtLink } from "@mui/material";
-import { useNavigate} from "react-router-dom";
-
-import {useTranslation} from "react-i18next";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function ProjectsDetail() {
   const { idProj } = useParams();
-
   const [t, i18n] = useTranslation("global");
 
-  let projects = t('projects', { returnObjects: true });
+  let projects = t("projects", { returnObjects: true });
   let showMore = t("showMore", { returnObjects: true });
 
   let project = projects.find((proj) => proj.idProj == idProj);
   let navigate = useNavigate();
-  console.log(projects);
 
   return (
     <div>
@@ -38,7 +29,11 @@ export default function ProjectsDetail() {
             <Grid container spacing={2}>
               <Grid item xs={4} sx={{ alignContent: "center" }}>
                 <Link>
-                  <BsFillArrowLeftCircleFill onClick={() => navigate(-1)} size="3rem" style={{ color: "0069cc", paddingTop:"0.5rem", paddingLeft:"0.5rem" }} />
+                  <BsFillArrowLeftCircleFill
+                    onClick={() => navigate(-1)}
+                    size="3rem"
+                    style={{ color: "0069cc", paddingTop: "0.5rem", paddingLeft: "0.5rem" }}
+                  />
                 </Link>
                 <div>
                   <CardMedia
@@ -70,7 +65,7 @@ export default function ProjectsDetail() {
                   <ExtLink target="_blank" href={project.info} style={{ textDecoration: "none" }}>
                     <Button variant="outlined" size="small">
                       <div>
-                      {showMore[0].label} <BsBoxArrowUpRight />
+                        {showMore[0].label} <BsBoxArrowUpRight />
                       </div>
                     </Button>
                   </ExtLink>

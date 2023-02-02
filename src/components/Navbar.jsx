@@ -1,17 +1,17 @@
-import * as React from "react";
+import MenuIcon from "@mui/icons-material/Menu";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -143,7 +143,7 @@ function Navbar() {
             <Grid container spacing={0}>
               <Grid item xs={4} sm={4} md={4} xl={4}>
                 <Link>
-                  <Button onClick={() => handleChangeLng("es")} sx={{ my: 2, color: "white"}}>
+                  <Button onClick={() => handleChangeLng("es")} sx={{ my: 2, color: "white" }}>
                     <img
                       class="flag"
                       src="../argentina-64.png"
@@ -151,13 +151,13 @@ function Navbar() {
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: "white" }}
                     />
-                    <Typography sx={{ my: 2, color: "white"}}> </Typography>
+                    <Typography sx={{ my: 2, color: "white" }}> </Typography>
                   </Button>
                 </Link>
               </Grid>
               <Grid item xs={4} sm={4} md={4} xl={4}>
                 <Link>
-                  <Button onClick={() => handleChangeLng("en")} sx={{ my: 2, color: "white"}}>
+                  <Button onClick={() => handleChangeLng("en")} sx={{ my: 2, color: "white" }}>
                     <img
                       class="flag"
                       src="../united states-64.png"
@@ -165,13 +165,13 @@ function Navbar() {
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: "white" }}
                     />
-                    <Typography sx={{ my: 2, color: "white"}}> </Typography>
+                    <Typography sx={{ my: 2, color: "white" }}> </Typography>
                   </Button>
                 </Link>
               </Grid>
               <Grid item xs={4} sm={4} md={4} xl={4}>
                 <Link>
-                  <Button onClick={() => handleChangeLng("fr")} sx={{ my: 2, color: "white"}}>
+                  <Button onClick={() => handleChangeLng("fr")} sx={{ my: 2, color: "white" }}>
                     <img
                       class="flag"
                       src="../france-64.png"

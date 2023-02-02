@@ -1,36 +1,22 @@
 import React from "react";
-// import { experiencias } from "../Data/Data.js";
+import { Link as ExtLink, Stack } from "@mui/material";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import { Stack } from "@mui/material";
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import CardActions from "@mui/material/CardActions";
-import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
-import { Link as ExtLink } from "@mui/material";
-import { minHeight } from "@mui/system";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import image from "../ciculitos.svg";
-
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
-// sx={{backgroundImage: `url(${image})`, minheight: "50vh", backgroundSize: "cover"}}
 
 export default function Experiences() {
   const [t, i18n] = useTranslation("global");
 
   let experiences = t("experiences", { returnObjects: true });
   let showReference = t("showReference", { returnObjects: true });
-  const arrow = "=>";
-
-  console.log(showReference[0].label)
-
 
   return (
     <div sx={{ alignItems: "center" }}>
@@ -57,15 +43,12 @@ export default function Experiences() {
                         <Typography variant="body2" color="text.secondary">
                           {item.initDate} ➜ {item.finishDate}
                         </Typography>
-                        {/* <Typography variant="body2" color="text.secondary">
-                          {item.description}
-                        </Typography> */}
                       </CardContent>
                       <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <ExtLink target="_blank" href={item.reference} style={{ textDecoration: "none" }}>
                           <Button variant="outlined" size="small">
                             <div>
-                            {showReference[0].label} <BsBoxArrowUpRight />
+                              {showReference[0].label} <BsBoxArrowUpRight />
                             </div>
                           </Button>
                         </ExtLink>

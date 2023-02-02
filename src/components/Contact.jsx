@@ -10,8 +10,6 @@ import { useTranslation } from "react-i18next";
 export default function Contacto() {
   const [t, i18n] = useTranslation("global");
 
-  // let contact = t("contact", { returnObjects: true });
-
   const emailSent = () => {
     toast.success("Mail Enviado", {
       position: "top-center",
@@ -50,9 +48,9 @@ export default function Contacto() {
     );
   };
 
-  const deleteForm = () => { 
+  const deleteForm = () => {
     document.getElementById("form").reset();
-  }
+  };
 
   return (
     <>
@@ -64,14 +62,10 @@ export default function Contacto() {
               <form id="form" class="topBefore" ref={form} onSubmit={sendEmail}>
                 <input id="name" type="text" name="user_name" placeholder={t("contact.name")} />
                 <br />
-                {/* <input id="tel" type="tel" placeholder="EMAIL" onChange={(e) => setEmail(e.target.value)} />
-                <br /> */}
                 <input id="email" type="email" name="user_email" placeholder={t("contact.email")} />
                 <input id="telefono" type="tel" name="user_tel" placeholder={t("contact.phone")} />
                 <br />
-
                 <textarea id="textarea" name="message" placeholder={t("contact.message")} />
-
                 <br />
                 <br />
                 <input className="send-button" type="submit" value={t("contact.send")} />
