@@ -5,6 +5,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import image from "../wave-haikei23.svg";
+import ianchayaFoto from "../ianchayafoto.png";
 import Contact from "./Contact";
 import Education from "./Education";
 import Experiences from "./Experiences";
@@ -32,7 +33,7 @@ export default function Home() {
           <Grid className="container-foto-home" item xs={12} sm={12} md={4} xl={4}>
             <img
               class="ian-chaya-foto"
-              src="../ianchaya-foto.png"
+              src={ianchayaFoto}
               alt="IanChaya-foto"
               sx={{ my: 2, color: "white", display: "block" }}
             />

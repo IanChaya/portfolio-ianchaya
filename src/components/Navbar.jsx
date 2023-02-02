@@ -12,6 +12,12 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import argentinianFlag from "../argentina-64.png";
+import EEUUFlag from "../france-64.png";
+import frenchFlag from "../united states-64.png";
+import ianchayaLogo from "../ianchaya5.png"
+
+
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -46,7 +52,7 @@ function Navbar() {
             <Link style={{ textDecoration: "none" }} to={"/"}>
               <img
                 class="ian-chaya"
-                src="../ianchaya5.png"
+                src={ianchayaLogo}
                 alt="IanChaya"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block", height: "500" }}
@@ -146,7 +152,7 @@ function Navbar() {
                   <Button onClick={() => handleChangeLng("es")} sx={{ my: 2, color: "white" }}>
                     <img
                       class="flag"
-                      src="../argentina-64.png"
+                      src={argentinianFlag}
                       alt="bandera argentina"
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: "white" }}
@@ -160,7 +166,7 @@ function Navbar() {
                   <Button onClick={() => handleChangeLng("en")} sx={{ my: 2, color: "white" }}>
                     <img
                       class="flag"
-                      src="../united states-64.png"
+                      src={EEUUFlag}
                       alt="bandera eeuu"
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: "white" }}
@@ -174,7 +180,7 @@ function Navbar() {
                   <Button onClick={() => handleChangeLng("fr")} sx={{ my: 2, color: "white" }}>
                     <img
                       class="flag"
-                      src="../france-64.png"
+                      src={frenchFlag}
                       alt="bandera francia"
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: "white", display: "inline" }}

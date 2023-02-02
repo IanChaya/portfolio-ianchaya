@@ -52,12 +52,12 @@
     },
     {
       "idEd": "uia-utn",
-      "title": "Diplôme en Industries 4.0",
+      "title": "Diplôme en Transformation Numérique et Industries 4.0",
       "initDate": "08/2022",
       "finishDate": "12/2022",
       "description": "Data Analytics, Cloud Computing, Cybersécurité, Fabrication Additive, Robotique, Gestion de Projet, Lean Management, Innovation, Leadership et Responsabilité Sociétale, Transfert Didactique et Pédagogique, Réalisation d'un Projet de Transformation Digitale.",
       "place": "UIA - UTN",
-      "logo": "../uia-utn-rutax.png",
+      "logo": "https://formacionx.uia.org.ar/pluginfile.php/1/core_admin/logo/0x200/1661283407/logo_login_tri.png",
       "certificate": "",
       "category": "Principal"
     },
@@ -68,7 +68,7 @@
       "finishDate": "11/2022",
       "description": "Concepts et structure des programmes - Fondamentaux d'URScript - Variables de pose - Systèmes de coordonnées - Utilisation avancée du TCP - Suivi de bande transporteuse - Contrôle de force (avancé).",
       "place": "Universal Robots",
-      "logo": "../universal-robots.png",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNAQCCLVAhSjkVjRUnCXOtJ2PjJDqfh5vPtB95LuNOiEnq-6J",
       "certificate": "https://drive.google.com/file/d/1IvtMwlW3pd4jEMUNC_aRQA6Zhr61gL40/view",
       "category": "Cours"
     },
@@ -79,7 +79,7 @@
       "finishDate": "09/2021",
       "description": "Application pick and place - Paramètres de sécurité - Optimisation d'une application pick and place - Démarrage simple - Déroulement du programme - Palettisation - Contrôle de la force (simple) - Application du processus avec sélection de l'opérateur - Redéploiement flexible - Plan de mise en œuvre - Ressources en ligne",
       "place": "Universal Robots",
-      "logo": "../universal-robots.png",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNAQCCLVAhSjkVjRUnCXOtJ2PjJDqfh5vPtB95LuNOiEnq-6J",
       "certificate": "https://drive.google.com/file/d/1FZbkQCeMlsIdvqVBT7RPR8k-NvUi1eX7/view?usp=sharing",
       "category": "Cours"
     },
@@ -112,7 +112,7 @@
       "finishDate": "12/2021",
       "description": "FORMATION EN ERGONOMIE avec des compétences pour identifier les facteurs de risque présents dans le Protocole Ergonomie - Connaître les champs d'action de l'Ergonomie, ainsi que ses domaines d'intervention - Comprendre la vision proactive de l'Ergonomie. Identifier les facteurs de risque pour l'ergonomie au travail, à travers le protocole Ergonomie",
       "place": "AdEA",
-      "logo": "../AdEA.png",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQplofI5kwiNmHJRZOkun1F7kaYZWPN6BsobAgAgDYuouLHuqrr",
       "certificate": "https://drive.google.com/file/d/1VbhhjAcawhDHi-k4FZDbW0GdcF1R1T4S/view",
       "category": "Courses"
     },
@@ -134,7 +134,7 @@
       "finishDate": "09/2019",
       "description": "Compétences de niveau B2 : Est capable de comprendre les idées principales de textes complexes traitant à la fois de sujets concrets et abstraits, même s'ils sont de nature technique, à condition qu'ils soient dans son domaine de spécialisation - Peut interagir avec des locuteurs natifs avec un degré suffisant de fluidité et de naturel, pour que la communication s'effectue sans effort de la part des interlocuteurs - Peut produire des textes clairs et détaillés sur des sujets variés, ainsi que défendre un point de vue sur des sujets généraux, en indiquant le pour et le contre de les différentes options.",
       "place": "UTN",
-      "logo": "../delf-b2.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7tjbTUc_Zf0sZp6bvas4WyCmz_pOyU0bq0qUTdis7hE0ddv-E",
       "certificate": "https://drive.google.com/file/d/1NOyCVfPThSK5-d9dwKLPguvMVtmHiMkL/view",
       "category": "Langues"
     },
@@ -174,175 +174,182 @@
       "idSkill": "javascript",
       "title": "Javascript",
       "category": "Programmation Web",
-      "logo": "../js.png",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-I03vfT81QVrLL6yWGOGFZ_teO8uJ2aXXSECO2Hvj3K_1RfVa",
       "rating": "3"
     },
     {
       "idSkill": "html",
       "title": "HTML",
       "category": "Programmation Web",
-      "logo": "../html-5.png",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUtO1jkloQLU88z73PD--MxNWWXTbN604g_aPcsBlsZPLXaf49",
       "rating": "4"
     },
     {
       "idSkill": "css",
       "title": "CSS",
       "category": "Programmation Web",
-      "logo": "../css-3.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMlqHN-61vve_5zex83w9MLeTdIHla-B1Lahq_IeRQ_613X64l",
       "rating": "4"
     },
     {
       "idSkill": "react",
       "title": "React",
       "category": "Programmation Web",
-      "logo": "../react.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv0GoF6mfLKF0DfGuVL61iYQP89bDCnMjRhEaHt_v0Yetmzn4N",
       "rating": "4"
     },
     {
       "idSkill": "bootstrap",
       "title": "Bootstrap",
       "category": "Programmation Web",
-      "logo": "../bootstrap.png",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF5Da-LX8l9hUlKueAVh9AruQHL3h8UjextCo3TU4_dk6nwvzU",
       "rating": "4"
     },
     {
       "idSkill": "material-ui",
       "title": "Material UI",
       "category": "Programmation Web",
-      "logo": "../material-ui.png",
+      "logo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5hQqcVmZrpwsxyTE-vPjtpGOBqvDI0KRKqSuAlvFNHpz5r-9H",
       "rating": "4"
     },
     {
       "idSkill": "matlab",
       "title": "MATLAB",
       "category": "Programmation",
-      "logo": "../Matlab_Logo.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH2-SQ-Fq3TLpIZAx0gwM6tO3oVM18l9miX61ZEXI5saxUXEln",
       "rating": "4"
     },
     {
       "idSkill": "c",
       "title": "C",
       "category": "Programmation",
-      "logo": "../letra-c.png",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3jPl7CUU5o1Ob6aBnTxqj9ELj0J7lJmYszOV4db6dIaAdpKQH",
       "rating": "4"
     },
     {
       "idSkill": "python",
       "title": "Python",
       "category": "Programmation",
-      "logo": "../python.jpeg",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROg_EYdi4AGmvChYIHqa1LWreW1C-6Twtuxva00i932CYpS0PO",
       "rating": "3"
     },
     {
       "idSkill": "github",
       "title": "Github",
       "category": "Programmation Web",
-      "logo": "../github.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzOiBEoHyWl_kVdQCSLe8ogP9xAcyV_paEvIzE50CDQCluVlzB",
       "rating": "3.5"
     },
     {
       "idSkill": "photoshop",
       "title": "Photoshop",
       "category": "Adobe",
-      "logo": "../photoshop.png",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuzDQF13JXDTat01exOMWYT87O9eblxYxyfTCTBG3BmpWEx3da",
       "rating": "4"
     },
     {
       "idSkill": "premiere",
       "title": "Premiere",
       "category": "Adobe",
-      "logo": "../premiere-pro.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXhTPQ-7FiEXbwvkcfEC8p1yiIqpSe3sGNS8leNP1JNiHKc1wd",
       "rating": "4"
     },
     {
       "idSkill": "universal-robots",
       "title": "Polyscope - UR",
       "category": "Robotique",
-      "logo": "../universal-robots.png",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNAQCCLVAhSjkVjRUnCXOtJ2PjJDqfh5vPtB95LuNOiEnq-6J",
       "rating": "4.5"
     },
     {
       "idSkill": "fusion360",
       "title": "Fusion 360",
       "category": "Modélisation 3D",
-      "logo": "../fusion-360.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkbBK2szE9VyHb_9yxE80Wub_rkOgxUkPre5SWVF6_ujQZ4L17",
       "rating": "4"
     },
     {
       "idSkill": "prusaslicer",
       "title": "Prusa Slicer",
       "category": "Modélisation 3D",
-      "logo": "../prusaslicer.png",
+      "logo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjzDbA0OMPZMyuXBCEAEz2EXTS3Oj7wDu9AuBrYGkD-5x0bii2",
       "rating": "4"
     },
     {
       "idSkill": "eagle",
       "title": "Eagle",
       "category": "Conception PCB",
-      "logo": "../eagle.jpeg",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXNRG-EWH5j5mCXAuScqxoc60ZsXrRjq0HYEgWvrne7SS89G6z",
       "rating": "4"
     },
     {
       "idSkill": "word",
       "title": "Word",
       "category": "Office",
-      "logo": "../word.png",
+      "logo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOCLx5NHBgAUPzB0enOiBzS2KdaqOvyUkQBnR7USyYiScV_aMW",
       "rating": "4.5"
     },
     {
       "idSkill": "excel",
       "title": "Excel",
       "category": "Office",
-      "logo": "../excel.png",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-WqjDzE2Wg_pxoLmtUV4I_qaQAm7xJ3dsvKruQPrqCbprFlP",
       "rating": "4"
     },
     {
       "idSkill": "powerpoint",
       "title": "PowerPoint",
       "category": "Office",
-      "logo": "../powerpoint.png",
+      "logo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW1MUFFVeXcRK7TdCaVoa2daHRYCQfsfuxYLa5wpy6o955W6qW",
       "rating": "4"
     },
     {
       "idSkill": "step7",
       "title": "Step 7",
       "category": "Programmation PLC",
-      "logo": "../step-7.jpeg",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLBTgxBzGLYMzUJqifuh8bLYg-SV0qKVHVF6nd85jlg1I3C-s_",
       "rating": "4"
     },
     {
       "idSkill": "tiaportal",
       "title": "TIA Portal",
       "category": "Programmation PLC",
-      "logo": "../tia-portal.jpeg",
+      "logo": "https://i.ytimg.com/vi/9aPqCdvC3gU/hqdefault.jpg",
       "rating": "4"
     },
     {
       "idSkill": "wincc",
       "title": "WinCC",
-      "category": "Programmation de PLC",
-      "logo": "../wincc.jpeg",
+      "category": "Programmation PLC",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnNUToS11u2sZK8u6YG0U8xsSTORhQDffj50mkRpzMcOvPrDiH",
       "rating": "4"
     },
     {
       "idSkill": "raspberry",
       "title": "Raspberry Pi",
       "category": "Microcontrôleurs",
-      "logo": "../raspberry-pi.png",
+      "logo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvZ_oulHmD6_RGqWRSm6QnglKVIX6tlyd0E-BSeRdnGqXJf1HK",
       "rating": "4"
     },
     {
       "idSkill": "arduino",
       "title": "Arduino",
       "category": "Microcontrôleurs",
-      "logo": "../arduino.png",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbM7LBLmjgWuICIDllHHCpf1olxCFAYjs79VOYXFGvYvy30Qdp",
       "rating": "4"
     },
     {
       "idSkill": "stm32",
       "title": "STM32 IDE",
       "category": "Microcontrôleurs",
-      "logo": "../stm32.png",
+      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIdOC2YhDlYC8K0ZsQ7tjpEGiaMQPlcqc1zD3Znr2lvLH-qIDZ",
+      "rating": "4"
+    },
+    {
+      "idSkill": "node-red",
+      "title": "Node-RED",
+      "category": "Programmation Web",
+      "logo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTblVmWezfoQJAI7jjEeXfaJoA9CT6vbxNXjejkHkKaZha0Zsvw",
       "rating": "4"
     }
   ],

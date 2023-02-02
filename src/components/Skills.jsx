@@ -43,7 +43,7 @@ export default function Skills() {
                         <CardMedia
                           component="img"
                           alt={item.title}
-                          image={item.logo}
+                          image={item.logo} 
                           sx={{ padding: "2em 2em 0 2em", height: "10rem", objectFit: "contain" }}
                         />
                         <CardContent
