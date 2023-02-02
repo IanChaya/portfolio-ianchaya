@@ -54,7 +54,7 @@ export default function Projects() {
                           alignItems: "center",
                         }}
                       >
-                        <Link to={"/Projects/" + item.idProj}>
+                        <Link to={"/portfolio-ianchaya/Projects/" + item.idProj}>
                           <CardMedia
                             component="img"
                             alt={item.title}

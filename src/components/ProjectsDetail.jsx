@@ -27,7 +27,7 @@ export default function ProjectsDetail() {
         <Box p={10} pt={5} width="375" height="525" margin="1" minHeight="60vh">
           <Card sx={{ display: "flex", flexDirection: "row", aspectRatio: "stretch", height: "500" }}>
             <Grid container spacing={2}>
-              <Grid item xs={4} sx={{ alignContent: "center" }}>
+              <Grid item xs={12} sm={12} md={4} xl={4} sx={{ alignContent: "center" }}>
                 <Link>
                   <BsFillArrowLeftCircleFill
                     onClick={() => navigate(-1)}
@@ -50,7 +50,7 @@ export default function ProjectsDetail() {
                   />
                 </div>
               </Grid>
-              <Grid item xs={8} sx={{}}>
+              <Grid item xs={12} sm={12} md={8} xl={8} sx={{}}>
                 <CardContent>
                   <Typography variant="h4" component="div">
                     {project.title}

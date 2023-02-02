@@ -55,7 +55,7 @@ export default function Education() {
                           alignItems: "center",
                         }}
                       >
-                        <Link to={"/Education/" + item.idEd}>
+                        <Link to={"/portfolio-ianchaya/Education/" + item.idEd}>
                           <CardMedia
                             component="img"
                             alt={item.title}

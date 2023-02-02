@@ -28,7 +28,7 @@ export default function Experiences() {
                 <Grid key={i} item>
                   <div key={item.id}>
                     <Card className="skill-boxes" sx={{ maxWidth: 345, minHeight: "65vh" }}>
-                      <Link to={"/Experiences/" + item.idExp}>
+                      <Link to={"/portfolio-ianchaya/Experiences/" + item.idExp}>
                         <CardMedia
                           component="img"
                           alt={item.title}
