@@ -49,7 +49,7 @@ function Navbar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-            <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya"}>
+            <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
                 src={ianchayaLogo}
