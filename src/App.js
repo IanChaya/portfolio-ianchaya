@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/portfolio-ianchaya" element={<Home />} />
+          <Route path="/portfolio-ianchaya/" element={<Home />} />
           <Route path="/Education" element={<Education />} />
           <Route path="/Education/:idEd" element={<EducationDetail />} />
           <Route path="/Experiences" element={<Experiences />} />
