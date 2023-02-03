@@ -55,7 +55,7 @@ function Navbar() {
                 src={ianchayaLogo}
                 alt="IanChaya"
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block", height: "499" }}
+                sx={{ my: 2, color: "white", display: "block", height: "500", padding:"4" }}
               />
             </Link>
           </Button>
