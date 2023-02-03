@@ -48,7 +48,7 @@ function Navbar() {
     <AppBar style={{ margin: 0 }} position="sticky" sx={{ bgcolor: "#0069cc" }}>
       <Container maxWidth="100%" margin="0">
         <Toolbar disableGutters>
-          <Button spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "none", sm:"block", md: "block", xl:"block"  }}}>
+          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "none", sm:"block", md: "block", xl:"block"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
@@ -145,7 +145,7 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-          <Button spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "block", sm:"none", md: "none", xl:"none"  }}}>
+          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "block", sm:"none", md: "none", xl:"none"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
