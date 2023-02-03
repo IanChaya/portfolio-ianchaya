@@ -30,25 +30,25 @@ export default function Projects() {
     projectFound = projects.filter((skill) => skill.category === valueFound);
   }
   return (
-    <div>
-      <Grid container justifyContent="flex-end" padding={3}>
+    <div sx={{maxWidth:"100%"}}>
+      <Grid container justifyContent="flex-end" maxWidth="100%" padding={3}>
         <ProjectsCategories align="end"></ProjectsCategories>
       </Grid>
 
-      <div sx={{ alignItems: "center" }}>
+      <div sx={{ alignItems: "center", maxWidth:"100%"}}>
         <Stack>
-          <Box p={5} pt={2} minHeight="100vh">
+          <Box p={5} pt={2} minHeight="100vh" maxWidth="100%" >
             <Grid container spacing={7.5} justifyContent="center">
               {projectFound.map((item, i) => {
                 return (
                   <Grid key={i} item>
-                    <div key={item.id} sx={{ justifyContent: "center", alignItems: "center" }}>
+                    <div key={item.id} sx={{ justifyContent: "center", alignItems: "center"}}>
                       <Card
                         className="skill-boxes"
                         sx={{
-                          maxWidth: 345,
-                          minHeight: "60vh",
-                          minWidth: "52vh",
+                          maxWidth: "50vh",
+                          minHeight: "57.5vh",
+                          minWidth: "39vh",
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
@@ -59,15 +59,15 @@ export default function Projects() {
                             component="img"
                             alt={item.title}
                             image={item.logo}
-                            sx={{ padding: "2em 2em 0 2em", height: "12.5rem", width: "20rem", objectFit: "contain" }}
+                            sx={{ padding: "2em 2em 0 2em", height: "12.5rem", width: "20rem", margin: 0, maxWidth:"100%", objectFit: "contain" }}
                           />
                         </Link>
 
-                        <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                          <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: "center" }}>
+                        <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
+                          <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: "center", maxWidth:"100%", padding:"1rem" }}>
                             {item.title}
                           </Typography>
-                          <Typography variant="body2" color="text.secondary" sx={{ textAlign: "center" }}>
+                          <Typography variant="body2" color="text.secondary" sx={{ textAlign: "center"}}>
                             {item.initDate} ➜ {item.finishDate}
                           </Typography>
                         </CardContent>

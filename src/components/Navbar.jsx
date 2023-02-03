@@ -45,10 +45,10 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "#0069cc" }}>
-      <Container maxWidth="100%" >
+    <AppBar style={{ margin: 0 }} position="sticky" sx={{ bgcolor: "#0069cc" }}>
+      <Container maxWidth="100%" margin="0">
         <Toolbar disableGutters>
-          <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+          <Button spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "none", sm:"block", md: "block", xl:"block"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
@@ -59,7 +59,6 @@ function Navbar() {
               />
             </Link>
           </Button>
-          <br />
           {/* Tipografia y estilos lista Navbar */}
           <Typography
             variant="h6"
@@ -106,7 +105,7 @@ function Navbar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none", textDecoration: "none" },
+                display: { xs: "block", md: "none", textDecoration: "none", width:"100%" },
               }}
             >
               {pages.map((page) => (
@@ -146,7 +145,18 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          <Button spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "block", sm:"none", md: "none", xl:"none"  }}}>
+            <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
+              <img
+                class="ian-chaya"
+                src={ianchayaLogo}
+                alt="IanChaya"
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block", height: "499" }}
+              />
+            </Link>
+          </Button>
+          <Box sx={{ flexGrow: 0, marginLeft:2 }}>
             <Grid container spacing={0}>
               <Grid item xs={4} sm={4} md={4} xl={4}>
                 <Link>

@@ -54,26 +54,28 @@ export default function Contacto() {
 
   return (
     <>
-      <div className="contenedor-form">
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={12} md={12} xl={12}>
-              <h1 style={{ display: "flex", justifyContent: "center" }}>{t("contact.title")}</h1>
-              <form id="form" class="topBefore" ref={form} onSubmit={sendEmail}>
-                <input id="name" type="text" name="user_name" placeholder={t("contact.name")} />
-                <br />
-                <input id="email" type="email" name="user_email" placeholder={t("contact.email")} />
-                <input id="telefono" type="tel" name="user_tel" placeholder={t("contact.phone")} />
-                <br />
-                <textarea id="textarea" name="message" placeholder={t("contact.message")} />
-                <br />
-                <br />
-                <input className="send-button" type="submit" value={t("contact.send")} />
-              </form>
+      <Grid xs={12} sm={12} md={12} xl={12} sx={{display:"flex", justifyContent:"center", alignContent:"center"}}>
+        <div className="contenedor-form">
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={12} md={12} xl={12}>
+                <h1 style={{ display: "flex", justifyContent: "center", textAlign:"center"}}>{t("contact.title")}</h1>
+                <form id="form" class="topBefore" ref={form} onSubmit={sendEmail}>
+                  <input id="name" type="text" name="user_name" placeholder={t("contact.name")} />
+                  <br />
+                  <input id="email" type="email" name="user_email" placeholder={t("contact.email")} />
+                  <input id="telefono" type="tel" name="user_tel" placeholder={t("contact.phone")} />
+                  <br />
+                  <textarea id="textarea" name="message" placeholder={t("contact.message")} />
+                  <br />
+                  <br />
+                  <input className="send-button" type="submit" value={t("contact.send")} />
+                </form>
+              </Grid>
             </Grid>
-          </Grid>
-        </Box>
-      </div>
+          </Box>
+        </div>
+      </Grid>
       <ToastContainer />
     </>
   );

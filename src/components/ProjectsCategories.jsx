@@ -23,7 +23,7 @@ export default function ProjectsCategories() {
         }}
         id="controllable-states-demo"
         options={projectsCategories}
-        sx={{ width: 300 }}
+        sx={{ width: "16rem" }}
         renderInput={(params) => <TextField {...params} label={t("categories.label")} />}
         disableClearable
       />

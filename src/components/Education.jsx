@@ -47,9 +47,9 @@ export default function Education() {
                       <Card
                         className="skill-boxes"
                         sx={{
-                          maxWidth: 345,
-                          minHeight: "60vh",
-                          minWidth: "52vh",
+                          maxWidth: "50vh",
+                          minHeight: "45.5vh",
+                          minWidth: "39vh",
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
