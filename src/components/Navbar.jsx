@@ -46,7 +46,7 @@ function Navbar() {
 
   return (
     <AppBar position="static" sx={{ bgcolor: "#0069cc" }}>
-      <Container maxWidth="xl">
+      <Container maxWidth="100%" >
         <Toolbar disableGutters>
           <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
@@ -55,10 +55,11 @@ function Navbar() {
                 src={ianchayaLogo}
                 alt="IanChaya"
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block", height: "500", padding:"4" }}
+                sx={{ my: 2, color: "white", display: "block", height: "500" }}
               />
             </Link>
           </Button>
+          <br />
           {/* Tipografia y estilos lista Navbar */}
           <Typography
             variant="h6"
@@ -95,12 +96,12 @@ function Navbar() {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left",
+                horizontal: "center",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "center",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}

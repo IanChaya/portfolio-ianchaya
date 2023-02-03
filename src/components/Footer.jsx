@@ -28,6 +28,7 @@ export default function StickyFooter() {
       sx={{
         display: "flex",
         flexDirection: "column",
+        overflow: "hidden"
       }}
     >
       <CssBaseline />

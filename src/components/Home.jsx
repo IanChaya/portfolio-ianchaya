@@ -27,7 +27,7 @@ export default function Home() {
     <>
       <Box
         className="container-presentation"
-        sx={{ flexGrow: 1, backgroundImage: `url(${image})`, minheight: "50vh", backgroundSize: "cover" }}
+        sx={{ flexGrow: 1, backgroundImage: `url(${image})`, minheight: "50vh", backgroundSize: "cover", overflow: "hidden", maxWidth:"100%" }}
       >
         <Grid container spacing={2}>
           <Grid className="container-foto-home" item xs={12} sm={12} md={4} xl={4}>
