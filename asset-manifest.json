@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio-ianchaya/static/css/main.72e6f722.css",
-    "main.js": "/portfolio-ianchaya/static/js/main.a2bd21ef.js",
+    "main.js": "/portfolio-ianchaya/static/js/main.6d285067.js",
     "static/js/787.59750f1a.chunk.js": "/portfolio-ianchaya/static/js/787.59750f1a.chunk.js",
     "static/media/ianchayafoto.png": "/portfolio-ianchaya/static/media/ianchayafoto.1a5b12ecbb8e76999dec.png",
     "static/media/ianchaya5.png": "/portfolio-ianchaya/static/media/ianchaya5.015226da7048135cbfa3.png",
     "index.html": "/portfolio-ianchaya/index.html",
     "static/media/wave-haikei23.svg": "/portfolio-ianchaya/static/media/wave-haikei23.76a9a59ea1d1d824c6a677b9f07a75c3.svg",
     "main.72e6f722.css.map": "/portfolio-ianchaya/static/css/main.72e6f722.css.map",
-    "main.a2bd21ef.js.map": "/portfolio-ianchaya/static/js/main.a2bd21ef.js.map",
+    "main.6d285067.js.map": "/portfolio-ianchaya/static/js/main.6d285067.js.map",
     "787.59750f1a.chunk.js.map": "/portfolio-ianchaya/static/js/787.59750f1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72e6f722.css",
-    "static/js/main.a2bd21ef.js"
+    "static/js/main.6d285067.js"
   ]
 }
