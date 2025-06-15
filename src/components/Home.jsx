@@ -47,7 +47,7 @@ export default function Home() {
 
             <h4>{t("introductionText.paragraph5")}</h4>
 
-            {/* <h5>{t("introductionText.paragraph6")} </h5> */}
+            <h5>{t("introductionText.paragraph6")} </h5>
           </Grid>
         </Grid>
       </Box>
