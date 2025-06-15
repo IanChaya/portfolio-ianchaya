@@ -368,6 +368,17 @@
 
   "experiences": [
     {
+      "idExp": "schneider",
+      "title": "System Test and Verification Engineer",
+      "initDate": "03/2023",
+      "finishDate": "Present",
+      "description": "Member of the System Verification team dedicated to testing new industrial automation software in an international environment (France, India, Germany, USA) – Setting up the testing environment (including PLCs, drivers, network configuration, etc.) for testing new software features – Execution of verification tests. – If bugs are found, drafting documentation directed to the developers who will fix the issue. – Involvement throughout the Agile development cycle (DevOps)",
+      "entreprise": "Schneider Electric",
+      "place": "Carros, Côte d'Azur, France",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzketxNETjmxG_ipDNjWLKm4BRLggpfcpsIw&s",
+      "reference": "https://drive.google.com/file/d/1OEZ2E5W1BoFsvTeOMgXN1XG2ullADVxw/view?usp=share_link"
+    },
+    {
       "idExp": "bgh",
       "title": "Automation and Test Engineer",
       "initDate": "06/2021",

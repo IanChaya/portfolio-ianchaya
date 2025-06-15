@@ -369,10 +369,21 @@
 
   "experiences": [
     {
+      "idExp": "schneider",
+      "title": "Ingénieur Test et Vérification des Systèmes",
+      "initDate": "03/2023",
+      "finishDate": "Actuellement",
+      "description": "Membre de l'équipe de Vérification des Systèmes dédiée aux tests d'un nouveau logiciel d'automatisation industrielle dans un environnement international (France, Inde, Allemagne, États-Unis) – Configuration de l'environnement de test (incluant les automates, les drivers, la configuration réseau, etc.) pour tester les nouvelles fonctionnalités du logiciel – Exécution des tests de vérification. – En cas de bugs, rédaction de la documentation destinée aux développeurs en charge de la résolution. – Intervention tout au long du cycle de développement Agile (DevOps)",
+      "entreprise": "Schneider Electric",
+      "place": "Carros, Côte d'Azur, France",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzketxNETjmxG_ipDNjWLKm4BRLggpfcpsIw&s",
+      "reference": "https://drive.google.com/file/d/1OEZ2E5W1BoFsvTeOMgXN1XG2ullADVxw/view?usp=share_link"
+    },
+    {
       "idExp": "bgh",
       "title": "Ingénieur Automatisation et Tests",
       "initDate": "06/2022",
-      "finishDate": "Actualidad",
+      "finishDate": "02/2023",
       "description": "Développement de projets et tests d'automatisation industrielle Analyse du fonctionnement de l'usine dans le but de résoudre les problèmes et de mettre en œuvre des améliorations. Budgétisation, conception de prototypes, mise en service et suivi de projet. Modélisation et impression 3D - Fusion 360, Prusa Slicer. Conception et impression de circuits électroniques - Eagle. Programmation de microcontrôleurs en conjonction avec des capteurs et des actionneurs. Programmation de Robots Collaboratifs (Universal Robots) - Polyscope",
       "entreprise": "BGH S.A.",
       "place": "Río Grande, Tierra del Fuego, Argentina",
