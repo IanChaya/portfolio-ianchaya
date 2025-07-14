@@ -382,7 +382,7 @@
     {
       "idExp": "bgh",
       "title": "Ingeniero en Automatización y Test",
-      "initDate": "06/2022",
+      "initDate": "06/2021",
       "finishDate": "02/2023",
       "description": "Desarrollo de Proyectos de Automatización Industrial y Test.Análisis del funcionamiento de Planta con el objetivo de solucionar problemas e implementar mejoras. Presupuestación, Diseño de Prototipos, Puesta en Marcha y Seguimiento de Proyectos. Modelado e Impresión 3D - Fusion 360, Prusa Slicer. Diseño e Impresión de Circuitos Electrónicos - Eagle. Programación de Microcontroladores en conjunto con sensores y actuadores. Programación de Robots Colaborativos (Universal Robots) - Polyscope",
       "entreprise": "BGH S.A.",
@@ -394,7 +394,7 @@
       "idExp": "zf",
       "title": "Ingeniero R&D",
       "initDate": "03/2020",
-      "finishDate": "09/2022",
+      "finishDate": "09/2020",
       "description": "Adquisición de Datos mediante placas de desarrollo de radar, Procesamiento de Señales de radar, Desarrollo de una App para analizar la cadena de procesamiento de señales de radar – MATLAB, App Designer, mmWave Studio, Hardware Accelerator.",
       "entreprise": "ZF Autocruise",
       "place": "Brest, Francia",
