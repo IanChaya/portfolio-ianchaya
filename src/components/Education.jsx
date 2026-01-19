@@ -63,15 +63,15 @@ export default function Education() {
                           />
                         </Link>
 
-                        <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", flexGrow: 1, justifyContent: "center" }}>
-                          <Typography gutterBottom variant="h6" component="div" sx={{ textAlign: "center", fontSize: "1rem", fontWeight: 500 }}>
+                        <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem" }}>
+                          <Typography gutterBottom variant="h6" component="div" sx={{ textAlign: "center", fontSize: "1rem", fontWeight: 500, marginBottom: "0.25rem" }}>
                             {item.title}
                           </Typography>
                           <Typography variant="body2" color="text.secondary" sx={{ textAlign: "center" }}>
                             {item.initDate} ➜ {item.finishDate}
                           </Typography>
                         </CardContent>
-                        <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "1rem" }}>
+                        <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem 1rem" }}>
                           <ExtLink target="_blank" href={item.certificate} style={{ textDecoration: "none" }}>
                             <Button variant="outlined" size="small">
                               <div>
