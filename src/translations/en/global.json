@@ -111,7 +111,7 @@
       "finishDate": "12/2021",
       "description": "TRAINING IN ERGONOMICS with skills to identify the risk factors present in the Ergonomics Protocol - Know the fields of action of Ergonomics, as well as its areas of intervention - Understand the proactive vision of Ergonomics. Identify risk factors for ergonomics in the workplace, through the Ergonomics protocol",
       "place": "AdEA",
-      "logo": "../AdEA.png",
+      "logo": "/portfolio-ianchaya/assets/AdEA.png",
       "certificate": "https://drive.google.com/file/d/1VbhhjAcawhDHi-k4FZDbW0GdcF1R1T4S/view",
       "category": "Courses"
     },
@@ -173,14 +173,14 @@
       "idSkill": "javascript",
       "title": "Javascript",
       "category": "Web Programming",
-      "logo": "../js.png",
+      "logo": "/portfolio-ianchaya/assets/js.png",
       "rating": "3"
     },
     {
       "idSkill": "html",
       "title": "HTML",
       "category": "Web Programming",
-      "logo": "../html-5.png",
+      "logo": "/portfolio-ianchaya/assets/html-5.png",
       "rating": "4"
     },
     {

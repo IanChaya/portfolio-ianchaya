@@ -112,7 +112,7 @@
       "finishDate": "12/2021",
       "description": "FORMATION EN ERGONOMIE avec des compétences pour identifier les facteurs de risque présents dans le Protocole Ergonomie - Connaître les champs d'action de l'Ergonomie, ainsi que ses domaines d'intervention - Comprendre la vision proactive de l'Ergonomie. Identifier les facteurs de risque pour l'ergonomie au travail, à travers le protocole Ergonomie",
       "place": "AdEA",
-      "logo": "../AdEA.png",
+      "logo": "/portfolio-ianchaya/assets/AdEA.png",
       "certificate": "https://drive.google.com/file/d/1VbhhjAcawhDHi-k4FZDbW0GdcF1R1T4S/view",
       "category": "Courses"
     },
@@ -174,14 +174,14 @@
       "idSkill": "javascript",
       "title": "Javascript",
       "category": "Programmation Web",
-      "logo": "../js.png",
+      "logo": "/portfolio-ianchaya/assets/js.png",
       "rating": "3"
     },
     {
       "idSkill": "html",
       "title": "HTML",
       "category": "Programmation Web",
-      "logo": "../html-5.png",
+      "logo": "/portfolio-ianchaya/assets/html-5.png",
       "rating": "4"
     },
     {
