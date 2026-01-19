@@ -48,7 +48,7 @@ export default function Education() {
                         className="skill-boxes"
                         sx={{
                           width: { xs: "280px", sm: "300px", md: "320px" },
-                          height: { xs: "400px", sm: "410px", md: "420px" },
+                          height: { xs: "340px", sm: "350px", md: "360px" },
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
