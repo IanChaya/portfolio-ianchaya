@@ -47,9 +47,8 @@ export default function Education() {
                       <Card
                         className="skill-boxes"
                         sx={{
-                          maxWidth: "50vh",
-                          minHeight: "45.5vh",
-                          minWidth: "39vh",
+                          width: "320px",
+                          height: "420px",
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
@@ -64,15 +63,15 @@ export default function Education() {
                           />
                         </Link>
 
-                        <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                          <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: "center" }}>
+                        <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", flexGrow: 1, justifyContent: "center" }}>
+                          <Typography gutterBottom variant="h6" component="div" sx={{ textAlign: "center", fontSize: "1rem", fontWeight: 500 }}>
                             {item.title}
                           </Typography>
                           <Typography variant="body2" color="text.secondary" sx={{ textAlign: "center" }}>
                             {item.initDate} ➜ {item.finishDate}
                           </Typography>
                         </CardContent>
-                        <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "1rem" }}>
                           <ExtLink target="_blank" href={item.certificate} style={{ textDecoration: "none" }}>
                             <Button variant="outlined" size="small">
                               <div>
