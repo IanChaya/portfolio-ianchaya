@@ -47,8 +47,8 @@ export default function Education() {
                       <Card
                         className="skill-boxes"
                         sx={{
-                          width: "320px",
-                          height: "420px",
+                          width: { xs: "280px", sm: "300px", md: "320px" },
+                          height: { xs: "400px", sm: "410px", md: "420px" },
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
@@ -59,7 +59,7 @@ export default function Education() {
                             component="img"
                             alt={item.title}
                             image={item.logo}
-                            sx={{ padding: "2em 2em 0 2em", height: "12.5rem", width: "20rem", objectFit: "contain" }}
+                            sx={{ padding: "2em 2em 0 2em", height: { xs: "10rem", sm: "11rem", md: "12.5rem" }, width: { xs: "16rem", sm: "18rem", md: "20rem" }, objectFit: "contain" }}
                           />
                         </Link>
 
