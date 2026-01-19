@@ -38,7 +38,7 @@ export default function Education() {
 
       <div sx={{ alignItems: "center" }}>
         <Stack>
-          <Box p={5} pt={2} minHeight="100vh">
+          <Box p={5} pt={2}>
             <Grid container spacing={7.5} justifyContent="center">
               {EducationFound.map((item, i) => {
                 return (

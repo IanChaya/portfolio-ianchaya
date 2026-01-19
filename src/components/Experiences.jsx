@@ -21,7 +21,7 @@ export default function Experiences() {
   return (
     <div sx={{ alignItems: "center" }}>
       <Stack>
-        <Box p={2} pt={5} minHeight="100vh">
+        <Box p={2} pt={5}>
           <Grid container spacing={7.5} justifyContent="center">
             {experiences.map((item, i) => {
               return (

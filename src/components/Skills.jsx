@@ -33,7 +33,7 @@ export default function Skills() {
 
       <div sx={{ alignItems: "center" }}>
         <Stack>
-          <Box p={10} pt={2.5} minHeight="100vh">
+          <Box p={10} pt={2.5}>
             <Grid container spacing={10} justifyContent="center">
               {skillsFound.map((item, i) => {
                 return (

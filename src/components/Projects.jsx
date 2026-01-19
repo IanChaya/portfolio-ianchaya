@@ -37,7 +37,7 @@ export default function Projects() {
 
       <div sx={{ alignItems: "center", maxWidth:"100%"}}>
         <Stack>
-          <Box p={5} pt={2} minHeight="100vh" maxWidth="100%" >
+          <Box p={5} pt={2} maxWidth="100%">
             <Grid container spacing={7.5} justifyContent="center">
               {projectFound.map((item, i) => {
                 return (
