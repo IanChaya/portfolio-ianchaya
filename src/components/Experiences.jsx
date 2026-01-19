@@ -27,24 +27,33 @@ export default function Experiences() {
               return (
                 <Grid key={i} item>
                   <div key={item.id}>
-                    <Card className="skill-boxes" sx={{ maxWidth: 345, minHeight: "65vh" }}>
+                    <Card
+                      className="skill-boxes"
+                      sx={{
+                        width: { xs: "280px", sm: "300px", md: "320px" },
+                        height: { xs: "340px", sm: "350px", md: "360px" },
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                    >
                       <Link to={"/portfolio-ianchaya/Experiences/" + item.idExp}>
                         <CardMedia
                           component="img"
                           alt={item.title}
                           image={item.logo}
-                          sx={{ padding: "2em 2em 0 2em", height: "12.5rem", width: "20rem", objectFit: "contain" }}
+                          sx={{ padding: "2em 2em 0 2em", height: { xs: "10rem", sm: "11rem", md: "12.5rem" }, width: { xs: "16rem", sm: "18rem", md: "20rem" }, objectFit: "contain" }}
                         />
                       </Link>
-                      <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                        <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: "center" }}>
+                      <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem" }}>
+                        <Typography gutterBottom variant="h6" component="div" sx={{ textAlign: "center", fontSize: "1rem", fontWeight: 500, marginBottom: "0.25rem" }}>
                           {item.title} | {item.entreprise}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.secondary" sx={{ textAlign: "center" }}>
                           {item.initDate} ➜ {item.finishDate}
                         </Typography>
                       </CardContent>
-                      <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                      <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem 1rem" }}>
                         <ExtLink target="_blank" href={item.reference} style={{ textDecoration: "none" }}>
                           <Button variant="outlined" size="small">
                             <div>
