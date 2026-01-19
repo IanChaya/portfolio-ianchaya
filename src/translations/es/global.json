@@ -112,7 +112,7 @@
       "finishDate": "12/2021",
       "description": "FORMACIÓN EN ERGONOMÍA con competencias para identificar los factores de riesgo presentes en el Protocolo de Ergonomía - Conocer los campos de acción de la Ergonomía, así como sus areas de intervención - Comprender la visión proactiva de la Ergonomía. Identificar factores de riesgo por disergonomía en el puesto de trabajo, a través del protocolo de Ergonomía",
       "place": "AdEA",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQplofI5kwiNmHJRZOkun1F7kaYZWPN6BsobAgAgDYuouLHuqrr",
+      "logo": "../AdEA.png",
       "certificate": "https://drive.google.com/file/d/1VbhhjAcawhDHi-k4FZDbW0GdcF1R1T4S/view",
       "category": "Cursos"
     },
@@ -174,14 +174,14 @@
       "idSkill": "javascript",
       "title": "Javascript",
       "category": "Programación Web",
-      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-I03vfT81QVrLL6yWGOGFZ_teO8uJ2aXXSECO2Hvj3K_1RfVa",
+      "logo": "../js.png",
       "rating": "3"
     },
     {
       "idSkill": "html",
       "title": "HTML",
       "category": "Programación Web",
-      "logo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUtO1jkloQLU88z73PD--MxNWWXTbN604g_aPcsBlsZPLXaf49",
+      "logo": "../html-5.png",
       "rating": "4"
     },
     {
