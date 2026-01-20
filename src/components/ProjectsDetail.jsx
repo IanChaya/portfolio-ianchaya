@@ -1,4 +1,5 @@
-import { Grid, Link as ExtLink } from "@mui/material";
+import { Chip, Divider, Grid, Link as ExtLink, List, ListItem, ListItemIcon, ListItemText, Stack } from "@mui/material";
+import { BsCheckCircleFill } from "react-icons/bs";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -8,12 +9,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { BsBoxArrowUpRight, BsFillArrowLeftCircleFill } from "react-icons/bs";
+import { BsBoxArrowUpRight, BsFillArrowLeftCircleFill, BsCalendar3, BsGeoAlt, BsBuilding, BsTag } from "react-icons/bs";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function ProjectsDetail() {
   const { idProj } = useParams();
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   let projects = t("projects", { returnObjects: true });
   let showMore = t("showMore", { returnObjects: true });
@@ -24,15 +25,15 @@ export default function ProjectsDetail() {
   return (
     <div>
       <div key={project.id}>
-        <Box p={10} pt={5} width="375" height="525" margin="1" minHeight="60vh">
-          <Card sx={{ display: "flex", flexDirection: "row", aspectRatio: "stretch", height: "500" }}>
+        <Box p={{ xs: 2, sm: 4, md: 10 }} pt={5} margin="1" minHeight="60vh">
+          <Card sx={{ display: "flex", flexDirection: "row" }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={12} md={4} xl={4} sx={{ alignContent: "center" }}>
                 <Link>
                   <BsFillArrowLeftCircleFill
                     onClick={() => navigate(-1)}
                     size="3rem"
-                    style={{ color: "0069cc", paddingTop: "0.5rem", paddingLeft: "0.5rem" }}
+                    style={{ color: "#0069cc", paddingTop: "0.5rem", paddingLeft: "0.5rem", cursor: "pointer" }}
                   />
                 </Link>
                 <div>
@@ -42,7 +43,7 @@ export default function ProjectsDetail() {
                     image={project.logo}
                     sx={{
                       marginBottom: "1rem",
-                      padding: "3em 3em 0 3em",
+                      padding: "2em",
                       height: "15rem",
                       objectFit: "contain",
                       alignContent: "center",
@@ -50,32 +51,82 @@ export default function ProjectsDetail() {
                   />
                 </div>
               </Grid>
-              <Grid item xs={12} sm={12} md={8} xl={8} sx={{}}>
-                <CardContent>
-                  <Typography variant="h4" component="div">
+              <Grid item xs={12} sm={12} md={8} xl={8}>
+                <CardContent sx={{ padding: { xs: 2, md: 3 } }}>
+                  <Typography variant="h4" component="div" gutterBottom sx={{ fontWeight: 600 }}>
                     {project.title}
                   </Typography>
-                  <br />
-                  <Typography align="justify" variant="paragraph" color="text.secondary">
-                    {project.description}{" "}
-                  </Typography>
-                  <br />
+
+                  <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap sx={{ mb: 2 }}>
+                    {project.entreprise && (
+                      <Chip
+                        icon={<BsBuilding style={{ marginLeft: "8px" }} />}
+                        label={project.entreprise}
+                        variant="outlined"
+                        color="primary"
+                        size="small"
+                      />
+                    )}
+                    {project.initDate && project.finishDate && (
+                      <Chip
+                        icon={<BsCalendar3 style={{ marginLeft: "8px" }} />}
+                        label={`${project.initDate} - ${project.finishDate}`}
+                        variant="outlined"
+                        size="small"
+                      />
+                    )}
+                    {project.place && (
+                      <Chip
+                        icon={<BsGeoAlt style={{ marginLeft: "8px" }} />}
+                        label={project.place}
+                        variant="outlined"
+                        size="small"
+                      />
+                    )}
+                    {project.category && (
+                      <Chip
+                        icon={<BsTag style={{ marginLeft: "8px" }} />}
+                        label={project.category}
+                        variant="outlined"
+                        size="small"
+                      />
+                    )}
+                  </Stack>
+
+                  <Divider sx={{ my: 2 }} />
+
+                  <List dense sx={{ py: 0 }}>
+                    {project.description.split(" - ").map((item, index) => (
+                      <ListItem key={index} sx={{ py: 0.5, px: 0 }}>
+                        <ListItemIcon sx={{ minWidth: 28 }}>
+                          <BsCheckCircleFill style={{ color: "#0069cc", fontSize: "0.9rem" }} />
+                        </ListItemIcon>
+                        <ListItemText
+                          primary={item.trim()}
+                          primaryTypographyProps={{
+                            variant: "body2",
+                            color: "text.secondary",
+                            sx: { lineHeight: 1.6 },
+                          }}
+                        />
+                      </ListItem>
+                    ))}
+                  </List>
                 </CardContent>
-                <CardActions sx={{}}>
-                  <ExtLink target="_blank" href={project.info} style={{ textDecoration: "none" }}>
-                    <Button variant="outlined" size="small">
-                      <div>
-                        {showMore[0].label} <BsBoxArrowUpRight />
-                      </div>
-                    </Button>
-                  </ExtLink>
+                <CardActions sx={{ padding: { xs: 2, md: 3 }, paddingTop: 0 }}>
+                  {project.info && (
+                    <ExtLink target="_blank" href={project.info} style={{ textDecoration: "none" }}>
+                      <Button variant="outlined" size="small" endIcon={<BsBoxArrowUpRight />}>
+                        {showMore[0].label}
+                      </Button>
+                    </ExtLink>
+                  )}
                 </CardActions>
               </Grid>
             </Grid>
           </Card>
         </Box>
       </div>
-      ;
     </div>
   );
 }
