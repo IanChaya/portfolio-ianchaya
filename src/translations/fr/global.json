@@ -445,7 +445,7 @@
     },
     {
       "idProj": "sdls-enib",
-      "title": "Simulation solaire par LED haute puissance pour tests de panneaux photovoltaïques",
+      "title": "Simulation solaire LED pour panneaux photovoltaïques",
       "initDate": "09/2019",
       "finishDate": "12/2019",
       "description": "Étude théorique : spectre solaire, fonctionnement des panneaux solaires et technologie LED - Sélection des composants : LEDs pour maximiser la puissance, source d'énergie, liste avec prix et quantité - Conception et fabrication du circuit : design PCB, impression et soudure - Contrôle d'intensité lumineuse via PWM avec microcontrôleur STM32 (langage C) et interface graphique via port série - Tests d'optimisation de la puissance du panneau solaire - Travail en équipe internationale (anglais/français) avec rapport final",
