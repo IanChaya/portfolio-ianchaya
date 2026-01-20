@@ -4,6 +4,8 @@ import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import TypeWriter from "./TypeWriter";
 import image from "../wave-haikei23.svg";
 import ianchayaFoto from "../ianchayafoto.png";
 import Contact from "./Contact";
@@ -29,25 +31,56 @@ export default function Home() {
         className="container-presentation"
         sx={{ flexGrow: 1, backgroundImage: `url(${image})`, minheight: "50vh", backgroundSize: "cover", overflow: "hidden", maxWidth:"100%" }}
       >
-        <Grid container spacing={2}>
+        <Grid container spacing={2} alignItems="center">
           <Grid className="container-foto-home" item xs={12} sm={12} md={4} xl={4}>
-            <img
-              class="ian-chaya-foto"
+            <motion.img
+              className="ian-chaya-foto"
               src={ianchayaFoto}
               alt="IanChaya-foto"
-              sx={{ my: 2, color: "white", display: "block" }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             />
           </Grid>
           <Grid className="container-texto-home" item xs={12} sm={12} md={8} xl={8} sx={{}}>
-            <h1>{t("introductionText.paragraph1")}</h1>
-            <h2>{t("introductionText.paragraph2")}</h2>
-            <h2>{t("introductionText.paragraph3")}</h2>
-
-            <h3>{t("introductionText.paragraph4")}</h3>
-
-            <h4>{t("introductionText.paragraph5")}</h4>
-
-            <h5>{t("introductionText.paragraph6")} </h5>
+            <h1>
+              <TypeWriter text={t("introductionText.paragraph1")} speed={30} delay={300} />
+            </h1>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.5 }}
+            >
+              {t("introductionText.paragraph2")}
+            </motion.h2>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.7 }}
+            >
+              {t("introductionText.paragraph3")}
+            </motion.h2>
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.9 }}
+            >
+              {t("introductionText.paragraph4")}
+            </motion.h3>
+            <motion.h4
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 2.1 }}
+            >
+              {t("introductionText.paragraph5")}
+            </motion.h4>
+            <motion.h5
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 2.3 }}
+            >
+              {t("introductionText.paragraph6")}
+            </motion.h5>
           </Grid>
         </Grid>
       </Box>
