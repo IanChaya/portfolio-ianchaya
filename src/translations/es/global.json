@@ -8,6 +8,13 @@
     "paragraph6": "Actualmente me desempeño como Product Owner / Product Manager en Schneider Electric"
   },
 
+  "hero": {
+    "downloadCv": "Descargar CV",
+    "contactMe": "Contactarme"
+  },
+
+  "backButton": "Volver",
+
   "pages": {
     "education": "Formación",
     "work-experiences": "Experiencias",
@@ -496,7 +503,10 @@
     "email": "EMAIL",
     "phone": "TELEFONO",
     "message": "MENSAJE",
-    "send": "ENVIAR 📧 "
+    "send": "ENVIAR 📧 ",
+    "sending": "ENVIANDO...",
+    "successToast": "¡Mensaje enviado con éxito!",
+    "errorToast": "Algo salió mal. Por favor, intentá de nuevo."
   },
 
   "footer": 

@@ -8,6 +8,13 @@
     "paragraph6": "Je suis actuellement Product Owner / Chef de Produit chez Schneider Electric."
   },
 
+  "hero": {
+    "downloadCv": "Télécharger le CV",
+    "contactMe": "Me contacter"
+  },
+
+  "backButton": "Retour",
+
   "pages": {
     "education": "Formation",
     "work-experiences": "Expériences",
@@ -490,7 +497,10 @@
     "email": "EMAIL",
     "phone": "TÉLÉPHONE",
     "message": "MESSAGE",
-    "send": "ENVOYER 📧 "
+    "send": "ENVOYER 📧 ",
+    "sending": "ENVOI EN COURS...",
+    "successToast": "Message envoyé avec succès !",
+    "errorToast": "Une erreur s'est produite. Veuillez réessayer."
   },
 
   "footer": { "label": "Suivez-moi sur mes réseaux sociaux pour plus d'informations" },

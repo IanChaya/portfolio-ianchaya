@@ -1,10 +1,12 @@
-import { Grid } from "@mui/material";
+import { Grid, Link as ExtLink } from "@mui/material";
+import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { BsFileEarmarkPdf, BsEnvelope, BsLinkedin, BsGithub } from "react-icons/bs";
 import TypeWriter from "./TypeWriter";
 import image from "../wave-haikei23.svg";
 import ianchayaFoto from "../ianchayafoto.png";
@@ -81,6 +83,41 @@ export default function Home() {
             >
               {t("introductionText.paragraph6")}
             </motion.h5>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 2.5 }}
+              style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center", marginTop: "1rem" }}
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                startIcon={<BsFileEarmarkPdf />}
+                component="a"
+                href={`${process.env.PUBLIC_URL}/assets/CV-IanChaya.pdf`}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("hero.downloadCv")}
+              </Button>
+              <Button
+                variant="outlined"
+                sx={{ color: "#0069cc", borderColor: "#0069cc", "&:hover": { borderColor: "#0069cc", bgcolor: "#f0f6ff" } }}
+                startIcon={<BsEnvelope />}
+                onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                {t("hero.contactMe")}
+              </Button>
+              <Box sx={{ width: "100%", display: "flex", justifyContent: "center", gap: 2, mt: 1 }}>
+                <ExtLink href="https://www.linkedin.com/in/ian-chaya-91a3a5198/" target="_blank" rel="noopener noreferrer" sx={{ color: "#0069cc" }}>
+                  <BsLinkedin size="1.5rem" />
+                </ExtLink>
+                <ExtLink href="https://github.com/IanChaya" target="_blank" rel="noopener noreferrer" sx={{ color: "#0069cc" }}>
+                  <BsGithub size="1.5rem" />
+                </ExtLink>
+              </Box>
+            </motion.div>
           </Grid>
         </Grid>
       </Box>
@@ -107,16 +144,26 @@ export default function Home() {
       <br />
       <br />
 
-      <Divider className="divider">{t("pages.education")}</Divider>
-      <Education></Education>
-      <Divider className="divider">{t("pages.work-experiences")}</Divider>
-      <Experiences></Experiences>
-      <Divider className="divider">{t("pages.skills")}</Divider>
-      <Skills></Skills>
-      <Divider className="divider">{t("pages.projects")}</Divider>
-      <Projects></Projects>
-      <Divider className="divider">{t("pages.contact")}</Divider>
-      <Contact></Contact>
+      <Box>
+        <Divider className="divider">{t("pages.education")}</Divider>
+        <Education></Education>
+      </Box>
+      <Box sx={{ bgcolor: "#f5f8fc" }}>
+        <Divider className="divider">{t("pages.work-experiences")}</Divider>
+        <Experiences></Experiences>
+      </Box>
+      <Box>
+        <Divider className="divider">{t("pages.skills")}</Divider>
+        <Skills></Skills>
+      </Box>
+      <Box sx={{ bgcolor: "#f5f8fc" }}>
+        <Divider className="divider">{t("pages.projects")}</Divider>
+        <Projects></Projects>
+      </Box>
+      <Box id="contacto">
+        <Divider className="divider">{t("pages.contact")}</Divider>
+        <Contact></Contact>
+      </Box>
     </>
   );
 }

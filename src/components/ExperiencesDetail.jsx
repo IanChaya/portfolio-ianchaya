@@ -8,8 +8,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import React from "react";
-import { BsBoxArrowUpRight, BsFillArrowLeftCircleFill, BsCalendar3, BsGeoAlt, BsBuilding } from "react-icons/bs";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { BsBoxArrowUpRight, BsArrowLeft, BsCalendar3, BsGeoAlt, BsBuilding } from "react-icons/bs";
+import { useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function ExperiencesDetail() {
@@ -27,31 +27,33 @@ export default function ExperiencesDetail() {
     <div>
       <div key={experience.id}>
         <Box p={{ xs: 2, sm: 4, md: 10 }} pt={5} margin="1" minHeight="60vh">
-          <Card sx={{ display: "flex", flexDirection: "row" }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={4} xl={4} sx={{ alignContent: "center" }}>
-                <Link>
-                  <BsFillArrowLeftCircleFill
-                    onClick={() => navigate(-1)}
-                    size="3rem"
-                    style={{ color: "#0069cc", paddingTop: "0.5rem", paddingLeft: "0.5rem", cursor: "pointer" }}
-                  />
-                </Link>
-                <div>
-                  <CardMedia
-                    component="img"
-                    alt={experience.title}
-                    image={experience.logo}
-                    sx={{
-                      marginBottom: "1rem",
-                      padding: "2em",
-                      height: "15rem",
-                      objectFit: "contain",
-                      alignContent: "center",
-                      justifyContent: "center",
-                    }}
-                  />
-                </div>
+          <Button
+            onClick={() => navigate(-1)}
+            startIcon={<BsArrowLeft />}
+            sx={{ mb: 2, color: "#0069cc" }}
+          >
+            {t("backButton")}
+          </Button>
+          <Card sx={{ display: "flex", flexDirection: "row", borderRadius: 3, overflow: "hidden" }}>
+            <Grid container spacing={0}>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={4}
+                xl={4}
+                sx={{ bgcolor: "grey.50", display: "flex", alignItems: "center", justifyContent: "center", p: 4 }}
+              >
+                <CardMedia
+                  component="img"
+                  alt={experience.title}
+                  image={experience.logo}
+                  sx={{
+                    maxHeight: "16rem",
+                    width: "100%",
+                    objectFit: "contain",
+                  }}
+                />
               </Grid>
               <Grid item xs={12} sm={12} md={8} xl={8}>
                 <CardContent sx={{ padding: { xs: 2, md: 3 } }}>

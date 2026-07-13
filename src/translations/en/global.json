@@ -7,6 +7,14 @@
     "paragraph5": "I am a proactive and enthusiastic person. I like to work in a team and I adapt quickly to changes.",
     "paragraph6": "I am currently a Product Owner / Product Manager at Schneider Electric."
   },
+
+  "hero": {
+    "downloadCv": "Download CV",
+    "contactMe": "Contact Me"
+  },
+
+  "backButton": "Back",
+
   "pages": {
     "education": "Education",
     "work-experiences": "Work Experiences",
@@ -489,7 +497,10 @@
     "email": "EMAIL",
     "phone": "PHONE",
     "message": "MESSAGE",
-    "send": "SEND 📧 "
+    "send": "SEND 📧 ",
+    "sending": "SENDING...",
+    "successToast": "Message sent successfully!",
+    "errorToast": "Something went wrong. Please try again."
   },
 
   "footer": { "label": "Follow me on my social networks for more information" },

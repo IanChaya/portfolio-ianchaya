@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import argentinianFlag from "../argentina-64.png";
 import EEUUFlag from "../united states-64.png";
 import frenchFlag from "../france-64.png";
-import ianchayaLogo from "../ianchaya5.png"
+import ianchayaLogo from "../ianchaya-logo-new.svg"
 
 
 
@@ -48,7 +48,7 @@ function Navbar() {
     <AppBar style={{ margin: 0 }} position="sticky" sx={{ bgcolor: "#0069cc" }}>
       <Container maxWidth="100%" margin="0">
         <Toolbar disableGutters>
-          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "none", sm:"block", md: "block", xl:"block"  }}}>
+          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 0.5, color: "white", alignItems: "center", display: { xs: "none", sm:"flex", md: "flex", xl:"flex"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
@@ -109,7 +109,7 @@ function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} textDecoration="none">
+                <MenuItem key={page.link} onClick={handleCloseNavMenu} textDecoration="none">
                   <Typography textAlign="center" className="categories">
                     <Link style={{ textDecoration: "none", color: "black" }} to={page.link}>
                       {page.label}
@@ -138,14 +138,14 @@ function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {/* Categorias en pantalla PC */}
             {pages.map((page) => (
-              <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+              <Button key={page.link} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
                 <Link style={{ textDecoration: "none", color: "white" }} className="categories" to={page.link}>
                   {page.label}
                 </Link>
               </Button>
             ))}
           </Box>
-          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: { xs: "block", sm:"none", md: "none", xl:"none"  }}}>
+          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 0.5, color: "white", alignItems: "center", display: { xs: "flex", sm:"none", md: "none", xl:"none"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
