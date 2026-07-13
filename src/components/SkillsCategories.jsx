@@ -14,6 +14,7 @@ export default function SkillsCategories() {
   return (
     <div>
       <Autocomplete
+        size="small"
         value={valueSkills}
         onChange={(event, newValue) => {
           setValueSkills(newValue);

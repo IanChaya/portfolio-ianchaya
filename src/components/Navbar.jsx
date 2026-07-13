@@ -39,6 +39,11 @@ function Navbar() {
     setAnchorElNav(null);
   };
 
+  const handleLogoClick = () => {
+    handleCloseNavMenu();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const handleChangeLng = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem("lng", lng);
@@ -48,13 +53,13 @@ function Navbar() {
     <AppBar style={{ margin: 0 }} position="sticky" sx={{ bgcolor: "#0069cc" }}>
       <Container maxWidth="100%" margin="0">
         <Toolbar disableGutters>
-          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 0.5, color: "white", alignItems: "center", display: { xs: "none", sm:"flex", md: "flex", xl:"flex"  }}}>
+          <Button className="container-logo-ianchaya" spacing={1} onClick={handleLogoClick} sx={{ my: 0.5, color: "white", alignItems: "center", display: { xs: "none", sm:"flex", md: "flex", xl:"flex"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
                 src={ianchayaLogo}
                 alt="IanChaya"
-                onClick={handleCloseNavMenu}
+                onClick={handleLogoClick}
                 sx={{ my: 2, color: "white", display: "block", height: "499" }}
               />
             </Link>
@@ -145,13 +150,13 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-          <Button className="container-logo-ianchaya" spacing={1} onClick={handleCloseNavMenu} sx={{ my: 0.5, color: "white", alignItems: "center", display: { xs: "flex", sm:"none", md: "none", xl:"none"  }}}>
+          <Button className="container-logo-ianchaya" spacing={1} onClick={handleLogoClick} sx={{ my: 0.5, color: "white", alignItems: "center", display: { xs: "flex", sm:"none", md: "none", xl:"none"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
                 src={ianchayaLogo}
                 alt="IanChaya"
-                onClick={handleCloseNavMenu}
+                onClick={handleLogoClick}
                 sx={{ my: 2, color: "white", display: "block", height: "499" }}
               />
             </Link>

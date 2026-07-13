@@ -15,6 +15,7 @@ export default function EducationCategories() {
   return (
     <div>
       <Autocomplete
+        size="small"
         value={valueEducation}
         onChange={(event, newValueEducation) => {
           setValueEducation(newValueEducation);

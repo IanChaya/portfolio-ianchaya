@@ -1,6 +1,11 @@
 import emailjs from "@emailjs/browser";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CircularProgress from "@mui/material/CircularProgress";
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 import React, { useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -12,10 +17,6 @@ export default function Contacto() {
   const [sending, setSending] = useState(false);
 
   const form = useRef();
-
-  const deleteForm = () => {
-    document.getElementById("form").reset();
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,7 +36,7 @@ export default function Contacto() {
             progress: undefined,
             theme: "light",
           });
-          deleteForm();
+          form.current.reset();
         }
       },
       (error) => {
@@ -57,33 +58,30 @@ export default function Contacto() {
 
   return (
     <>
-      <Grid item xs={12} sm={12} md={12} xl={12} sx={{display:"flex", justifyContent:"center", alignContent:"center"}}>
-        <div className="contenedor-form">
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={12} xl={12}>
-                <h1 style={{ display: "flex", justifyContent: "center", textAlign:"center"}}>{t("contact.title")}</h1>
-                <form id="form" class="topBefore" ref={form} onSubmit={sendEmail}>
-                  <input id="name" type="text" name="user_name" placeholder={t("contact.name")} required />
-                  <br />
-                  <input id="email" type="email" name="user_email" placeholder={t("contact.email")} required />
-                  <input id="telefono" type="tel" name="user_tel" placeholder={t("contact.phone")} />
-                  <br />
-                  <textarea id="textarea" name="message" placeholder={t("contact.message")} required />
-                  <br />
-                  <br />
-                  <input
-                    className="send-button"
-                    type="submit"
-                    value={sending ? t("contact.sending") : t("contact.send")}
-                    disabled={sending}
-                  />
-                </form>
-              </Grid>
-            </Grid>
+      <Box sx={{ display: "flex", justifyContent: "center", px: 2, py: 2 }}>
+        <Card elevation={2} sx={{ width: "100%", maxWidth: 420, p: { xs: 2.5, sm: 3 }, borderRadius: 3 }}>
+          <Typography variant="subtitle1" align="center" gutterBottom sx={{ fontWeight: 700, mb: 2 }}>
+            {t("contact.title")}
+          </Typography>
+          <Box component="form" ref={form} onSubmit={sendEmail} noValidate>
+            <Stack spacing={1.75}>
+              <TextField size="small" name="user_name" label={t("contact.name")} variant="outlined" fullWidth required />
+              <TextField size="small" name="user_email" type="email" label={t("contact.email")} variant="outlined" fullWidth required />
+              <TextField size="small" name="user_tel" type="tel" label={t("contact.phone")} variant="outlined" fullWidth />
+              <TextField size="small" name="message" label={t("contact.message")} variant="outlined" fullWidth required multiline rows={3} />
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                disabled={sending}
+                startIcon={sending ? <CircularProgress size={16} color="inherit" /> : null}
+              >
+                {sending ? t("contact.sending") : t("contact.send")}
+              </Button>
+            </Stack>
           </Box>
-        </div>
-      </Grid>
+        </Card>
+      </Box>
       <ToastContainer />
     </>
   );

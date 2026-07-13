@@ -13,6 +13,7 @@ export default function ProjectsCategories() {
   return (
     <div>
       <Autocomplete
+        size="small"
         value={valueProjects}
         onChange={(event, newValueProjects) => {
           setValueProjects(newValueProjects);
