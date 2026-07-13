@@ -1,0 +1,12 @@
+<svg viewBox="0 0 560 160" xmlns="http://www.w3.org/2000/svg" width="280" height="80">
+  <g font-family="'Poppins','Helvetica Neue',Arial,sans-serif">
+    <!-- Hexagon icon -->
+    <polygon points="75,10 133,44 133,110 75,144 17,110 17,44"
+             fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/>
+    <text x="75" y="101" font-size="68" font-weight="800" fill="#ffffff" text-anchor="middle">IC</text>
+
+    <!-- Wordmark -->
+    <text x="165" y="78" font-size="40" font-weight="700" letter-spacing="1px" fill="#ffffff">IAN CHAYA</text>
+    <text x="165" y="107" font-size="18" font-weight="600" letter-spacing="2px" fill="#cfe4fb">BUILD · AUTOMATE · INNOVATE</text>
+  </g>
+</svg>
