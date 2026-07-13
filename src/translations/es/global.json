@@ -377,7 +377,7 @@
   "experiences": [
     {
       "idExp": "schneider-po",
-      "title": "Product Owner / Gerente de Producto",
+      "title": "Product Owner / Product Manager",
       "initDate": "04/2026",
       "finishDate": "Actualidad",
       "description": "Product Owner de dos frentes de trabajo (Topología y Desarrollo Web) dentro de una plataforma de software de automatización industrial (EAE) – Topología: responsable del backlog del módulo que modela los dispositivos industriales y sus conexiones de red, definiendo cómo los usuarios configuran y validan estas instalaciones – Desarrollo Web: responsable del backlog del equipo que impulsa la plataforma hacia un entorno web – Priorización y refinamiento del backlog según el valor de negocio y la viabilidad técnica – Redacción de historias de usuario con criterios de aceptación claros – Liderazgo de las sesiones de sprint planning y refinamiento – Coordinación con desarrolladores, testers y arquitectos para mantener la entrega alineada con el roadmap – Contribución al diseño de funcionalidades y UX en un rol cercano al de arquitecto – Liderazgo de la alineación entre equipos cuando el alcance se superpone con otras plataformas – Desarrollo de herramientas internas basadas en IA para los workflows de Product Owner, incluyendo una aplicación de productividad personal e integraciones entre asistentes de IA y Azure DevOps para agilizar el refinamiento del backlog y el reporting",

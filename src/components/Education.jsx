@@ -48,7 +48,7 @@ export default function Education() {
                         className="skill-boxes"
                         sx={{
                           width: { xs: "280px", sm: "300px", md: "320px" },
-                          height: { xs: "340px", sm: "350px", md: "360px" },
+                          height: { xs: "350px", sm: "360px", md: "370px" },
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
@@ -62,20 +62,36 @@ export default function Education() {
                             sx={{ padding: "2em 2em 0 2em", height: { xs: "10rem", sm: "11rem", md: "12.5rem" }, width: { xs: "16rem", sm: "18rem", md: "20rem" }, objectFit: "contain", cursor: "pointer" }}
                           />
                           <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem", cursor: "pointer" }}>
-                            <Typography gutterBottom variant="h6" component="div" sx={{ textAlign: "center", fontSize: "1rem", fontWeight: 500, marginBottom: "0.25rem" }}>
-                              {item.title}
-                            </Typography>
+                            <Box sx={{ minHeight: "2.6em", display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }}>
+                              <Typography
+                                gutterBottom
+                                variant="h6"
+                                component="div"
+                                sx={{
+                                  textAlign: "center",
+                                  fontSize: "1rem",
+                                  fontWeight: 500,
+                                  marginBottom: 0,
+                                  lineHeight: 1.3,
+                                  display: "-webkit-box",
+                                  WebkitLineClamp: 2,
+                                  WebkitBoxOrient: "vertical",
+                                  overflow: "hidden",
+                                  textOverflow: "ellipsis",
+                                }}
+                              >
+                                {item.title}
+                              </Typography>
+                            </Box>
                             <Typography variant="body2" color="text.secondary" sx={{ textAlign: "center" }}>
                               {item.initDate} ➜ {item.finishDate}
                             </Typography>
                           </CardContent>
                         </Link>
-                        <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem 1rem" }}>
+                        <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem 1.5rem" }}>
                           <ExtLink target="_blank" href={item.certificate} style={{ textDecoration: "none" }}>
-                            <Button variant="outlined" size="small">
-                              <div>
-                                {showCredential[0].label} <BsBoxArrowUpRight />
-                              </div>
+                            <Button variant="outlined" size="small" endIcon={<BsBoxArrowUpRight />}>
+                              {showCredential[0].label}
                             </Button>
                           </ExtLink>
                         </CardActions>
