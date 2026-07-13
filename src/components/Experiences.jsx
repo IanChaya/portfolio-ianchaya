@@ -54,13 +54,15 @@ export default function Experiences() {
                         </CardContent>
                       </Link>
                       <CardActions sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0.5rem 1rem 1rem" }}>
-                        <ExtLink target="_blank" href={item.reference} style={{ textDecoration: "none" }}>
-                          <Button variant="outlined" size="small">
-                            <div>
-                              {showReference[0].label} <BsBoxArrowUpRight />
-                            </div>
-                          </Button>
-                        </ExtLink>
+                        {item.reference && (
+                          <ExtLink target="_blank" href={item.reference} style={{ textDecoration: "none" }}>
+                            <Button variant="outlined" size="small">
+                              <div>
+                                {showReference[0].label} <BsBoxArrowUpRight />
+                              </div>
+                            </Button>
+                          </ExtLink>
+                        )}
                       </CardActions>
                     </Card>
                   </div>

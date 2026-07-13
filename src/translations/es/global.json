@@ -1,11 +1,11 @@
 {
   "introductionText": {
     "paragraph1": "Hola, mi nombre es Ian Chaya.",
-    "paragraph2": "Tengo 30 años, soy nacido en Argentina pero poseo también la nacionalidad Croata.",
+    "paragraph2": "Tengo 31 años, soy nacido en Argentina pero poseo también la nacionalidad Croata.",
     "paragraph3": "Soy Ingeniero Electrónico, Diplomado en Transformación Digital e Industrias 4.0 y Desarrollador Front-end.",
     "paragraph4": "Tengo 4 años de experiencia en Automatización, Programación de Sistemas Embebidos, Diseño de Circuitos Electrónicos, Test y Verificación de Sistemas, Procesamiento de Señales y Desarrollo Web Front-end.",
     "paragraph5": "Soy una persona proactiva y entusiasta. Me gusta trabajar en equipo y me adapto rápidamente a los cambios.",
-    "paragraph6": "Actualmente integro el equipo de Ingenieria de Test y Verificacion de Sistemas en Schneider Electric"
+    "paragraph6": "Actualmente me desempeño como Product Owner / Product Manager en Schneider Electric"
   },
 
   "pages": {
@@ -57,7 +57,7 @@
       "finishDate": "12/2022",
       "description": "Data Analytics, Cloud Computing y Ciberseguridad - Fabricación Aditiva y Robótica - Gestión de Proyectos y Lean Management - Innovación, Liderazgo y Responsabilidad Social - Transferencia Didáctica y Pedagógica - Proyecto de Transformación Digital",
       "place": "UIA - UTN",
-      "logo": "https://formacionx.uia.org.ar/pluginfile.php/1/core_admin/logo/0x200/1661283407/logo_login_tri.png",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/04/Logo_uia_300x300.jpg",
       "certificate": "",
       "category": "Principal"
     },
@@ -90,7 +90,7 @@
       "finishDate": "05/2022",
       "description": "7 Pérdidas: Conceptos de productividad, operaciones que agregan valor, clasificación y acciones de reducción - QC 7: Conceptos de calidad, herramientas clásicas y nuevas con ejemplos prácticos - Kaizen: Resolución de problemas (Ocho pasos, PDCA, A3), metodología y mejora continua",
       "place": "INTI",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/INTI_Logo_2019.png/220px-INTI_Logo_2019.png",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0a/INTI_Logo_2019.png",
       "certificate": "https://drive.google.com/file/d/1O7rk3AypBEV_KSBiB9rL7YkUltu6fqXj/view",
       "category": "Cursos"
     },
@@ -369,15 +369,26 @@
 
   "experiences": [
     {
+      "idExp": "schneider-po",
+      "title": "Product Owner / Gerente de Producto",
+      "initDate": "04/2026",
+      "finishDate": "Actualidad",
+      "description": "Product Owner de dos frentes de trabajo (Topología y Desarrollo Web) dentro de una plataforma de software de automatización industrial (EAE) – Topología: responsable del backlog del módulo que modela los dispositivos industriales y sus conexiones de red, definiendo cómo los usuarios configuran y validan estas instalaciones – Desarrollo Web: responsable del backlog del equipo que impulsa la plataforma hacia un entorno web – Priorización y refinamiento del backlog según el valor de negocio y la viabilidad técnica – Redacción de historias de usuario con criterios de aceptación claros – Liderazgo de las sesiones de sprint planning y refinamiento – Coordinación con desarrolladores, testers y arquitectos para mantener la entrega alineada con el roadmap – Contribución al diseño de funcionalidades y UX en un rol cercano al de arquitecto – Liderazgo de la alineación entre equipos cuando el alcance se superpone con otras plataformas – Desarrollo de herramientas internas basadas en IA para los workflows de Product Owner, incluyendo una aplicación de productividad personal e integraciones entre asistentes de IA y Azure DevOps para agilizar el refinamiento del backlog y el reporting",
+      "entreprise": "Schneider Electric",
+      "place": "Carros, Cote d'Azur, Francia",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzketxNETjmxG_ipDNjWLKm4BRLggpfcpsIw&s",
+      "reference": ""
+    },
+    {
       "idExp": "schneider",
       "title": "Ingeniero de Test y Verificación de Sistemas",
       "initDate": "03/2023",
-      "finishDate": "Actualidad",
+      "finishDate": "04/2026",
       "description": "Integrante del equipo de Verificación de Sistemas testeando software de automatización industrial en entorno internacional (Francia, India, Alemania, EEUU) – Configuración del entorno de pruebas: PLCs, drivers y configuración de red – Ejecución de pruebas de verificación y documentación de bugs para desarrolladores – Participación en todo el ciclo de desarrollo Agile (DevOps)",
       "entreprise": "Schneider Electric",
       "place": "Carros, Cote d'Azur, Francia",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzketxNETjmxG_ipDNjWLKm4BRLggpfcpsIw&s",
-      "reference": "https://drive.google.com/file/d/1OEZ2E5W1BoFsvTeOMgXN1XG2ullADVxw/view?usp=share_link"
+      "reference": ""
     },
     {
       "idExp": "bgh",
@@ -387,8 +398,8 @@
       "description": "Desarrollo de proyectos de Automatización Industrial y Test – Análisis del funcionamiento de Planta para resolución de problemas e implementación de mejoras – Presupuestación, diseño de prototipos, puesta en marcha y seguimiento de proyectos – Modelado e impresión 3D (Fusion 360, Prusa Slicer) – Diseño e impresión de circuitos electrónicos (Eagle) – Programación de microcontroladores con sensores y actuadores – Programación de robots colaborativos (Universal Robots, Polyscope)",
       "entreprise": "BGH S.A.",
       "place": "Río Grande, Tierra del Fuego, Argentina",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_de_BGH.svg/1200px-Logo_de_BGH.svg.png",
-      "reference": "https://drive.google.com/file/d/1gNf_tYl6lRhhgSKPQIQje1RJwO_CTyDx/view?usp=share_link"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Logo_de_BGH.svg",
+      "reference": ""
     },
     {
       "idExp": "zf",
@@ -398,8 +409,8 @@
       "description": "Adquisición de datos mediante placas de desarrollo de radar – Procesamiento de señales de radar – Desarrollo de aplicación para análisis de la cadena de procesamiento de señales – Herramientas: MATLAB, App Designer, mmWave Studio, Hardware Accelerator",
       "entreprise": "ZF Autocruise",
       "place": "Brest, Francia",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/ZF_logo_STD_Blue_3CC.svg/640px-ZF_logo_STD_Blue_3CC.svg.png",
-      "reference": "https://drive.google.com/file/d/1OEZ2E5W1BoFsvTeOMgXN1XG2ullADVxw/view?usp=share_link"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/ZF_logo_STD_Blue_3CC.svg",
+      "reference": ""
     },
     {
       "idExp": "eproc",
@@ -427,7 +438,7 @@
       "description": "Contexto: Línea de producción de hornos de microondas con problemas ergonómicos en el montaje de transformadores (cargas de 3,5-5Kg con giro de 90°) – Solución: Implementación de Robot Colaborativo (Cobot) para asistir a operarios – Características: Procesamiento de imágenes por cámara para detección de transformadores en pallets – Mi rol: Presupuestación del proyecto, rediseño del puesto, programación del cobot, modelado 3D de pinza personalizada, programación de cámara de detección, diseño de botonera y electrónica – Trabajo multidisciplinario: Automatización, Ingeniería de Procesos, Producción, Logística, Servicio Médico, Seguridad y Operarios",
       "entreprise": "BGH",
       "place": "Rio Grande, Tierra del Fuego, Argentina",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_de_BGH.svg/1200px-Logo_de_BGH.svg.png",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Logo_de_BGH.svg",
       "category": "Automatización",
       "info": "https://youtu.be/74mzFb2mVGg"
     },
