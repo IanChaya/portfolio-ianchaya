@@ -98,6 +98,12 @@ export default function Home() {
                 download
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  fetch("https://ntfy.sh/ianchaya-cv-alerts-2026", {
+                    method: "POST",
+                    body: "Someone downloaded the CV from the portfolio site",
+                  }).catch(() => {});
+                }}
               >
                 {t("hero.downloadCv")}
               </Button>
