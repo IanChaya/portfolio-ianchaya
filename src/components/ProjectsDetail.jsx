@@ -11,6 +11,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { BsBoxArrowUpRight, BsArrowLeft, BsCalendar3, BsGeoAlt, BsBuilding, BsTag } from "react-icons/bs";
 import { useNavigate, useParams } from "react-router-dom";
+import DetailCard from "./DetailCard";
+
+// Switch back to "legacy" any time to restore the old two-column MUI card — nothing deleted below.
+const DETAIL_LAYOUT = "card"; // "card" | "legacy"
 
 export default function ProjectsDetail() {
   const { idProj } = useParams();
@@ -26,108 +30,116 @@ export default function ProjectsDetail() {
     <div>
       <div key={project.id}>
         <Box p={{ xs: 2, sm: 4, md: 10 }} pt={5} margin="1" minHeight="60vh">
-          <Button
-            onClick={() => navigate(-1)}
-            startIcon={<BsArrowLeft />}
-            sx={{ mb: 2, color: "#0069cc" }}
-          >
+          <Button onClick={() => navigate(-1)} startIcon={<BsArrowLeft />} sx={{ mb: 2, color: "#0069cc" }}>
             {t("backButton")}
           </Button>
-          <Card sx={{ display: "flex", flexDirection: "row", borderRadius: 3, overflow: "hidden" }}>
-            <Grid container spacing={0}>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={4}
-                xl={4}
-                sx={{ bgcolor: "grey.50", display: "flex", alignItems: "center", justifyContent: "center", p: 4 }}
-              >
-                <CardMedia
-                  component="img"
-                  alt={project.title}
-                  image={project.logo}
-                  sx={{
-                    maxHeight: "16rem",
-                    width: "100%",
-                    objectFit: "contain",
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12} sm={12} md={8} xl={8}>
-                <CardContent sx={{ padding: { xs: 2, md: 3 } }}>
-                  <Typography variant="h4" component="div" gutterBottom sx={{ fontWeight: 600 }}>
-                    {project.title}
-                  </Typography>
 
-                  <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap sx={{ mb: 2 }}>
-                    {project.entreprise && (
-                      <Chip
-                        icon={<BsBuilding style={{ marginLeft: "8px" }} />}
-                        label={project.entreprise}
-                        variant="outlined"
-                        color="primary"
-                        size="small"
-                      />
-                    )}
-                    {project.initDate && project.finishDate && (
-                      <Chip
-                        icon={<BsCalendar3 style={{ marginLeft: "8px" }} />}
-                        label={`${project.initDate} - ${project.finishDate}`}
-                        variant="outlined"
-                        size="small"
-                      />
-                    )}
-                    {project.place && (
-                      <Chip
-                        icon={<BsGeoAlt style={{ marginLeft: "8px" }} />}
-                        label={project.place}
-                        variant="outlined"
-                        size="small"
-                      />
-                    )}
-                    {project.category && (
-                      <Chip
-                        icon={<BsTag style={{ marginLeft: "8px" }} />}
-                        label={project.category}
-                        variant="outlined"
-                        size="small"
-                      />
-                    )}
-                  </Stack>
+          {DETAIL_LAYOUT === "card" ? (
+            <DetailCard
+              logo={project.logo}
+              title={project.title}
+              chips={[project.entreprise, `${project.initDate} – ${project.finishDate}`, project.place, project.category]}
+              description={project.description}
+              ctaLabel={showMore[0].label}
+              ctaHref={project.info}
+            />
+          ) : (
+            <Card sx={{ display: "flex", flexDirection: "row", borderRadius: 3, overflow: "hidden" }}>
+              <Grid container spacing={0}>
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={4}
+                  xl={4}
+                  sx={{ bgcolor: "grey.50", display: "flex", alignItems: "center", justifyContent: "center", p: 4 }}
+                >
+                  <CardMedia
+                    component="img"
+                    alt={project.title}
+                    image={project.logo}
+                    sx={{
+                      maxHeight: "16rem",
+                      width: "100%",
+                      objectFit: "contain",
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={12} md={8} xl={8}>
+                  <CardContent sx={{ padding: { xs: 2, md: 3 } }}>
+                    <Typography variant="h4" component="div" gutterBottom sx={{ fontWeight: 600 }}>
+                      {project.title}
+                    </Typography>
 
-                  <Divider sx={{ my: 2 }} />
-
-                  <List dense sx={{ py: 0 }}>
-                    {project.description.split(" - ").map((item, index) => (
-                      <ListItem key={index} sx={{ py: 0.5, px: 0 }}>
-                        <ListItemIcon sx={{ minWidth: 28 }}>
-                          <BsCheckCircleFill style={{ color: "#0069cc", fontSize: "0.9rem" }} />
-                        </ListItemIcon>
-                        <ListItemText
-                          primary={item.trim()}
-                          primaryTypographyProps={{
-                            variant: "body2",
-                            color: "text.secondary",
-                            sx: { lineHeight: 1.6 },
-                          }}
+                    <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap sx={{ mb: 2 }}>
+                      {project.entreprise && (
+                        <Chip
+                          icon={<BsBuilding style={{ marginLeft: "8px" }} />}
+                          label={project.entreprise}
+                          variant="outlined"
+                          color="primary"
+                          size="small"
                         />
-                      </ListItem>
-                    ))}
-                  </List>
-                </CardContent>
-                <CardActions sx={{ padding: { xs: 2, md: 3 }, paddingTop: 0 }}>
-                  {project.info && (
-                    <ExtLink target="_blank" href={project.info} style={{ textDecoration: "none" }}>
-                      <Button variant="outlined" size="small" endIcon={<BsBoxArrowUpRight />}>
-                        {showMore[0].label}
-                      </Button>
-                    </ExtLink>
-                  )}
-                </CardActions>
+                      )}
+                      {project.initDate && project.finishDate && (
+                        <Chip
+                          icon={<BsCalendar3 style={{ marginLeft: "8px" }} />}
+                          label={`${project.initDate} - ${project.finishDate}`}
+                          variant="outlined"
+                          size="small"
+                        />
+                      )}
+                      {project.place && (
+                        <Chip
+                          icon={<BsGeoAlt style={{ marginLeft: "8px" }} />}
+                          label={project.place}
+                          variant="outlined"
+                          size="small"
+                        />
+                      )}
+                      {project.category && (
+                        <Chip
+                          icon={<BsTag style={{ marginLeft: "8px" }} />}
+                          label={project.category}
+                          variant="outlined"
+                          size="small"
+                        />
+                      )}
+                    </Stack>
+
+                    <Divider sx={{ my: 2 }} />
+
+                    <List dense sx={{ py: 0 }}>
+                      {project.description.split(" - ").map((item, index) => (
+                        <ListItem key={index} sx={{ py: 0.5, px: 0 }}>
+                          <ListItemIcon sx={{ minWidth: 28 }}>
+                            <BsCheckCircleFill style={{ color: "#0069cc", fontSize: "0.9rem" }} />
+                          </ListItemIcon>
+                          <ListItemText
+                            primary={item.trim()}
+                            primaryTypographyProps={{
+                              variant: "body2",
+                              color: "text.secondary",
+                              sx: { lineHeight: 1.6 },
+                            }}
+                          />
+                        </ListItem>
+                      ))}
+                    </List>
+                  </CardContent>
+                  <CardActions sx={{ padding: { xs: 2, md: 3 }, paddingTop: 0 }}>
+                    {project.info && (
+                      <ExtLink target="_blank" href={project.info} style={{ textDecoration: "none" }}>
+                        <Button variant="outlined" size="small" endIcon={<BsBoxArrowUpRight />}>
+                          {showMore[0].label}
+                        </Button>
+                      </ExtLink>
+                    )}
+                  </CardActions>
+                </Grid>
               </Grid>
-            </Grid>
-          </Card>
+            </Card>
+          )}
         </Box>
       </div>
     </div>

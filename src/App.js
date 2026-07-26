@@ -15,6 +15,7 @@ import ContextComponent from "./components/ContextComponent";
 import Projects from "./components/Projects";
 import ProjectsDetail from "./components/ProjectsDetail"
 import Contact from "./components/Contact";
+import ChatBot from "./components/ChatBot";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ContextComponent>
         <BrowserRouter>
           <Navbar />
+          <ChatBot />
           <Routes>
             <Route path="/portfolio-ianchaya/" element={<Home />} />
             <Route path="/portfolio-ianchaya/Education" element={<Education />} />

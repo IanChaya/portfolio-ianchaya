@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -12,9 +11,6 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import argentinianFlag from "../argentina-64.png";
-import EEUUFlag from "../united states-64.png";
-import frenchFlag from "../france-64.png";
 import ianchayaLogo from "../ianchaya-logo-new.svg"
 
 
@@ -29,6 +25,12 @@ function Navbar() {
     { label: t("pages.skills"), link: "/portfolio-ianchaya/Skills" },
     { label: t("pages.projects"), link: "/portfolio-ianchaya/Projects" },
     { label: t("pages.contact"), link: "/portfolio-ianchaya/Contact" },
+  ];
+
+  const languages = [
+    { code: "es", label: "ES" },
+    { code: "en", label: "EN" },
+    { code: "fr", label: "FR" },
   ];
 
   const handleOpenNavMenu = (event) => {
@@ -161,51 +163,45 @@ function Navbar() {
               />
             </Link>
           </Button>
-          <Box sx={{ flexGrow: 0, marginLeft:2 }}>
-            <Grid container spacing={0}>
-              <Grid item xs={4} sm={4} md={4} xl={4}>
-                <Link>
-                  <Button onClick={() => handleChangeLng("es")} sx={{ my: 2, color: "white" }}>
-                    <img
-                      class="flag"
-                      src={argentinianFlag}
-                      alt="bandera argentina"
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white" }}
-                    />
-                    <Typography sx={{ my: 2, color: "white" }}> </Typography>
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item xs={4} sm={4} md={4} xl={4}>
-                <Link>
-                  <Button onClick={() => handleChangeLng("en")} sx={{ my: 2, color: "white" }}>
-                    <img
-                      class="flag"
-                      src={EEUUFlag}
-                      alt="bandera eeuu"
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white" }}
-                    />
-                    <Typography sx={{ my: 2, color: "white" }}> </Typography>
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item xs={4} sm={4} md={4} xl={4}>
-                <Link>
-                  <Button onClick={() => handleChangeLng("fr")} sx={{ my: 2, color: "white" }}>
-                    <img
-                      class="flag"
-                      src={frenchFlag}
-                      alt="bandera francia"
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white", display: "inline" }}
-                    />
-                    <Typography sx={{ my: 2, color: "white" }}> </Typography>
-                  </Button>
-                </Link>
-              </Grid>
-            </Grid>
+          <Box
+            component="nav"
+            aria-label="Language"
+            sx={{
+              flexGrow: 0,
+              marginLeft: 2,
+              display: "flex",
+              alignItems: "center",
+              gap: 0.5,
+              border: "1px solid rgba(255,255,255,0.4)",
+              borderRadius: 2,
+              px: 0.5,
+            }}
+          >
+            {languages.map((lang, idx) => (
+              <React.Fragment key={lang.code}>
+                {idx > 0 && (
+                  <Typography sx={{ color: "rgba(255,255,255,0.4)", fontSize: "0.75rem" }} aria-hidden="true">
+                    |
+                  </Typography>
+                )}
+                <Button
+                  onClick={() => handleChangeLng(lang.code)}
+                  aria-current={i18n.language === lang.code ? "true" : undefined}
+                  sx={{
+                    minWidth: "auto",
+                    px: 1,
+                    py: 0.5,
+                    fontSize: "0.875rem",
+                    color: "white",
+                    fontWeight: i18n.language === lang.code ? 700 : 400,
+                    opacity: i18n.language === lang.code ? 1 : 0.6,
+                    "&:hover": { opacity: 1, bgcolor: "rgba(255,255,255,0.1)" },
+                  }}
+                >
+                  {lang.label}
+                </Button>
+              </React.Fragment>
+            ))}
           </Box>
         </Toolbar>
       </Container>
