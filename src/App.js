@@ -16,6 +16,7 @@ import Projects from "./components/Projects";
 import ProjectsDetail from "./components/ProjectsDetail"
 import Contact from "./components/Contact";
 import ChatBot from "./components/ChatBot";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <CssBaseline />
       <ContextComponent>
         <BrowserRouter>
+          <ScrollToTop />
           <Navbar />
           <ChatBot />
           <Routes>
