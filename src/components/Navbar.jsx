@@ -83,7 +83,7 @@ function Navbar() {
             }}
           ></Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexShrink: 0, display: { xs: "flex", md: "none" } }}>
             {/* Menu hamburguesa */}
             <IconButton
               size="large"
@@ -93,6 +93,7 @@ function Navbar() {
               onClick={handleOpenNavMenu}
               color="inherit"
               textDecoration="none"
+              sx={{ p: { xs: 1, sm: 1.5 } }}
             >
               <MenuIcon />
             </IconButton>
@@ -112,7 +113,8 @@ function Navbar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none", textDecoration: "none", width:"100%" },
+                display: { xs: "block", md: "none" },
+                textDecoration: "none",
               }}
             >
               {pages.map((page) => (
@@ -135,6 +137,7 @@ function Navbar() {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
+              minWidth: 0,
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -152,7 +155,7 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-          <Button className="container-logo-ianchaya" spacing={1} onClick={handleLogoClick} sx={{ my: 0.5, color: "white", alignItems: "center", display: { xs: "flex", sm:"none", md: "none", xl:"none"  }}}>
+          <Button className="container-logo-ianchaya" spacing={1} onClick={handleLogoClick} sx={{ my: 0.5, color: "white", alignItems: "center", flexShrink: 0, display: { xs: "flex", sm:"none", md: "none", xl:"none"  }}}>
             <Link style={{ textDecoration: "none" }} to={"/portfolio-ianchaya/"}>
               <img
                 class="ian-chaya"
@@ -168,7 +171,8 @@ function Navbar() {
             aria-label="Language"
             sx={{
               flexGrow: 0,
-              marginLeft: 2,
+              flexShrink: 0,
+              marginLeft: { xs: 1, sm: 2 },
               display: "flex",
               alignItems: "center",
               gap: 0.5,

@@ -566,6 +566,18 @@
   ],
   "projects": [
     {
+      "idProj": "portfolio-chatbot",
+      "title": "Portfolio Personal con Chatbot IA",
+      "initDate": "12/2022",
+      "finishDate": "Present",
+      "description": "Portfolio personal desarrollado y mantenido de punta a punta con React, Material UI y react-i18next (inglés, francés, español) – Rediseño responsive completo de las secciones hero, habilidades, educación, experiencias y proyectos – Chatbot con IA (backend en Cloudflare Worker + LLM Groq) que responde en tiempo real preguntas de los visitantes sobre mi perfil – Seguimiento de descargas de CV mediante notificaciones push con ntfy.sh – Iteración continua basada en feedback real de usuarios, incluyendo correcciones de navegación, accesibilidad y comportamiento de scroll – Desplegado y actualizado de forma continua en GitHub Pages",
+      "entreprise": "Proyecto Personal",
+      "place": "Nice, Francia",
+      "logo": "https://ianchaya.github.io/portfolio-ianchaya/assets/react.png",
+      "category": "Desarrollo Web",
+      "info": "https://github.com/IanChaya/portfolio-ianchaya"
+    },
+    {
       "idProj": "ur10-trafos-bgh",
       "title": "Instalación de Robot Colaborativo para manipular Transformadores",
       "initDate": "11/2021",
@@ -617,6 +629,9 @@
   "categoriesProjects": [
     {
       "label": "Todos"
+    },
+    {
+      "label": "Desarrollo Web"
     },
     {
       "label": "Universitarios"

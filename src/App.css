@@ -150,6 +150,13 @@ body {
   display: block;
 }
 
+@media (max-width: 600px) {
+  .ian-chaya {
+    height: 2.25rem;
+    width: auto;
+  }
+}
+
 .flag {
   height: 30px;
 }
