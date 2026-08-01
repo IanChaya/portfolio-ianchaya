@@ -7,6 +7,24 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/logo192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0069cc" />
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // Decodes the route 404.html redirected here with, restoring the real
+      // URL via history.replaceState before React Router ever reads location.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
 
     <title>Ian Chaya | Product Owner &amp; Electronic Engineer</title>
     <meta
@@ -22,16 +40,16 @@
       property="og:description"
       content="Electronic Engineer and Product Owner at Schneider Electric, specialized in Industrial Automation, Systems Testing &amp; Verification, and Front-end Web Development."
     />
-    <meta property="og:image" content="https://ianchaya.github.io/portfolio-ianchaya/assets/ianchaya-foto.png" />
+    <meta property="og:image" content="https://ianchaya.github.io/portfolio-ianchaya/assets/og-image.png" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ian Chaya | Product Owner &amp; Electronic Engineer" />
     <meta
       name="twitter:description"
       content="Electronic Engineer and Product Owner at Schneider Electric, specialized in Industrial Automation, Systems Testing &amp; Verification, and Front-end Web Development."
     />
-    <meta name="twitter:image" content="https://ianchaya.github.io/portfolio-ianchaya/assets/ianchaya-foto.png" />
+    <meta name="twitter:image" content="https://ianchaya.github.io/portfolio-ianchaya/assets/og-image.png" />
 
     <!--
       manifest.json provides metadata used when your web app is installed on a
