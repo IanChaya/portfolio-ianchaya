@@ -251,7 +251,7 @@ export default function Contacto() {
                   color="primary"
                   disabled={sending}
                   startIcon={sending ? <CircularProgress size={16} color="inherit" /> : null}
-                  sx={{ borderRadius: 999, alignSelf: "flex-start", px: 3 }}
+                  sx={{ borderRadius: 999, alignSelf: "flex-end", px: 3 }}
                 >
                   {sending ? t("contact.sending") : t("contact.send")}
                 </Button>
