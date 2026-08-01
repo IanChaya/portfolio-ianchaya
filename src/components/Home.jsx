@@ -298,7 +298,7 @@ export default function Home() {
         <Divider className="divider">{t("pages.education")}</Divider>
         <Education></Education>
       </Box>
-      <Box sx={{ bgcolor: "#f5f8fc" }}>
+      <Box>
         <Divider className="divider">{t("pages.work-experiences")}</Divider>
         <Experiences></Experiences>
       </Box>
@@ -306,7 +306,7 @@ export default function Home() {
         <Divider className="divider">{t("pages.skills")}</Divider>
         <Skills></Skills>
       </Box>
-      <Box sx={{ bgcolor: "#f5f8fc" }}>
+      <Box>
         <Divider className="divider">{t("pages.projects")}</Divider>
         <Projects></Projects>
       </Box>
