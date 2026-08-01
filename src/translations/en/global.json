@@ -429,6 +429,13 @@
       "rating": "3"
     },
     {
+      "idSkill": "mistral",
+      "title": "Mistral AI",
+      "category": "AI Tools",
+      "logo": "https://cdn.simpleicons.org/mistralai",
+      "rating": "3.5"
+    },
+    {
       "idSkill": "ecostruxure",
       "title": "EcoStruxure Automation Expert",
       "category": "Industrial Automation",
@@ -503,7 +510,7 @@
       "title": "Product Owner / Product Manager",
       "initDate": "04/2026",
       "finishDate": "Present",
-      "description": "Product Owner for two workstreams (Topology and Web Development) within an industrial automation software platform (EAE) – Topology: ownership of the backlog for the module that models industrial devices and their network connections, defining how users configure and validate these setups – Web Development: ownership of the backlog for the team driving the platform toward a web-based environment – Backlog prioritization and refinement based on business value and technical feasibility – Writing user stories with clear acceptance criteria – Leading sprint planning and refinement sessions – Coordinating with developers, testers and architects to keep delivery aligned with the roadmap – Contributing to feature and UX design in an architect-adjacent capacity – Leading cross-team alignment when scope overlaps with other platforms – Developing internal AI-driven tools for Product Owner workflows, including a personal productivity application and AI-Azure DevOps integrations to streamline backlog refinement and reporting",
+      "description": "Product Owner for three agile teams (Topology, Web Development and Multiuser & Device Integration) within an industrial automation software platform (EAE) – Topology: ownership of the backlog for the module that models industrial devices and their network connections, defining how users configure and validate these setups – Web Development: ownership of the backlog for the team driving the platform toward a web-based environment – Multiuser & Device Integration: ownership of the backlog for multiuser collaboration capabilities and third-party device integration – Backlog prioritization and refinement based on business value and technical feasibility – Writing user stories with clear acceptance criteria – Leading sprint planning and refinement sessions across all three teams – Coordinating with developers, testers and architects to keep delivery aligned with the roadmap – Contributing to feature and UX design in an architect-adjacent capacity – Leading cross-team alignment when scope overlaps with other platforms – Developing internal AI-driven tools for Product Owner workflows, including a personal productivity application and AI-Azure DevOps integrations to streamline backlog refinement and reporting",
       "entreprise": "Schneider Electric",
       "place": "Carros, Côte d'Azur, France",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzketxNETjmxG_ipDNjWLKm4BRLggpfcpsIw&s",

@@ -429,6 +429,13 @@
       "rating": "3"
     },
     {
+      "idSkill": "mistral",
+      "title": "Mistral AI",
+      "category": "Outils IA",
+      "logo": "https://cdn.simpleicons.org/mistralai",
+      "rating": "3.5"
+    },
+    {
       "idSkill": "ecostruxure",
       "title": "EcoStruxure Automation Expert",
       "category": "Automatisation Industrielle",
@@ -503,7 +510,7 @@
       "title": "Product Owner / Chef de Produit",
       "initDate": "04/2026",
       "finishDate": "Actuellement",
-      "description": "Product Owner pour deux flux de travail (Topologie et Développement Web) au sein d'une plateforme logicielle d'automatisation industrielle (EAE) – Topologie : responsable du backlog du module qui modélise les équipements industriels et leurs connexions réseau, définissant comment les utilisateurs configurent et valident ces installations – Développement Web : responsable du backlog de l'équipe qui fait évoluer la plateforme vers un environnement web – Priorisation et affinage du backlog selon la valeur métier et la faisabilité technique – Rédaction de user stories avec des critères d'acceptation clairs – Animation des sessions de sprint planning et de refinement – Coordination avec les développeurs, testeurs et architectes pour aligner la livraison sur la roadmap – Contribution à la conception des fonctionnalités et de l'UX dans un rôle proche de celui d'architecte – Pilotage de l'alignement inter-équipes lorsque le périmètre chevauche d'autres plateformes – Développement d'outils internes basés sur l'IA pour les workflows de Product Owner, incluant une application de productivité personnelle et des intégrations entre assistants IA et Azure DevOps pour fluidifier l'affinage du backlog et le reporting",
+      "description": "Product Owner pour trois équipes agiles (Topologie, Développement Web et Multi-utilisateurs & Intégration d'Équipements) au sein d'une plateforme logicielle d'automatisation industrielle (EAE) – Topologie : responsable du backlog du module qui modélise les équipements industriels et leurs connexions réseau, définissant comment les utilisateurs configurent et valident ces installations – Développement Web : responsable du backlog de l'équipe qui fait évoluer la plateforme vers un environnement web – Multi-utilisateurs & Intégration d'Équipements : responsable du backlog des fonctionnalités de collaboration multi-utilisateurs et de l'intégration d'équipements tiers – Priorisation et affinage du backlog selon la valeur métier et la faisabilité technique – Rédaction de user stories avec des critères d'acceptation clairs – Animation des sessions de sprint planning et de refinement pour les trois équipes – Coordination avec les développeurs, testeurs et architectes pour aligner la livraison sur la roadmap – Contribution à la conception des fonctionnalités et de l'UX dans un rôle proche de celui d'architecte – Pilotage de l'alignement inter-équipes lorsque le périmètre chevauche d'autres plateformes – Développement d'outils internes basés sur l'IA pour les workflows de Product Owner, incluant une application de productivité personnelle et des intégrations entre assistants IA et Azure DevOps pour fluidifier l'affinage du backlog et le reporting",
       "entreprise": "Schneider Electric",
       "place": "Carros, Côte d'Azur, France",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzketxNETjmxG_ipDNjWLKm4BRLggpfcpsIw&s",
