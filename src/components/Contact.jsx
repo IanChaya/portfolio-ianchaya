@@ -125,7 +125,7 @@ export default function Contacto() {
         <Box
           sx={{
             width: "100%",
-            maxWidth: 900,
+            maxWidth: 1100,
             borderRadius: 3,
             overflow: "hidden",
             border: "1px solid",
