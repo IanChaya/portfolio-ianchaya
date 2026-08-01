@@ -646,13 +646,16 @@
     }
   ],
   "contact": {
-    "title": "Write a message and I will contact you shortly 👇",
-    "name": "NAME AND SURNAME",
-    "email": "EMAIL",
-    "phone": "PHONE",
-    "message": "MESSAGE",
-    "send": "SEND 📧 ",
-    "sending": "SENDING...",
+    "title": "Send a message",
+    "heading": "Let's talk.",
+    "roles": ["Product Owner", "Product Manager", "Team Leader"],
+    "linkedinLabel": "LinkedIn",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
     "successToast": "Message sent successfully!",
     "errorToast": "Something went wrong. Please try again."
   },

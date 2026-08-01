@@ -646,13 +646,16 @@
     }
   ],
   "contact": {
-    "title": "Écrivez un message et je vous contacterai 👇",
-    "name": "NOM ET PRÉNOM",
-    "email": "EMAIL",
-    "phone": "TÉLÉPHONE",
-    "message": "MESSAGE",
-    "send": "ENVOYER 📧 ",
-    "sending": "ENVOI EN COURS...",
+    "title": "Envoyer un message",
+    "heading": "Discutons.",
+    "roles": ["Product Owner", "Chef de Produit", "Chef d'Équipe"],
+    "linkedinLabel": "LinkedIn",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone (facultatif)",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
     "successToast": "Message envoyé avec succès !",
     "errorToast": "Une erreur s'est produite. Veuillez réessayer."
   },
