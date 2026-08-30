@@ -18,18 +18,23 @@ export default function ScrollToTop() {
   useEffect(() => {
     const savePosition = () => scrollPositions.set(key, window.scrollY);
     window.addEventListener("scroll", savePosition);
-    return () => {
-      savePosition();
-      window.removeEventListener("scroll", savePosition);
-    };
+    return () => window.removeEventListener("scroll", savePosition);
   }, [key]);
 
+  // The cleanup below (for the *outgoing* key) always runs before the effect
+  // body below runs for the *incoming* key, and both happen synchronously
+  // before paint — so window.scrollY here still reflects the page being left,
+  // not yet touched by the scrollTo() about to run for the new page. Saving
+  // in a useEffect cleanup instead would fire after paint, by which point
+  // this same scrollTo() has already overwritten window.scrollY.
   useLayoutEffect(() => {
     if (navigationType === "POP" && scrollPositions.has(key)) {
       window.scrollTo(0, scrollPositions.get(key));
     } else {
       window.scrollTo(0, 0);
     }
+
+    return () => scrollPositions.set(key, window.scrollY);
   }, [pathname, key, navigationType]);
 
   return null;
