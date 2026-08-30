@@ -283,13 +283,7 @@ export default function Home() {
                     justifyContent: "center",
                     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                     color: "#0069cc",
-                    transition: "transform .2s ease, box-shadow .2s ease, background-color .2s ease",
-                    "&:hover": {
-                      bgcolor: "#0069cc",
-                      color: "#fff",
-                      transform: "translateY(-3px)",
-                      boxShadow: "0 8px 18px rgba(0,105,204,0.35)",
-                    },
+                    "&:hover": { bgcolor: "#f0f6ff" },
                   }}
                 >
                   <BsLinkedin size="1.1rem" />
