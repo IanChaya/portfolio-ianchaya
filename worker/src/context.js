@@ -45,6 +45,10 @@ function formatProjects(list) {
     .join("\n");
 }
 
+function formatFacts(list) {
+  return list.map((f) => `- ${f.text}`).join("\n");
+}
+
 // Builds one condensed, plain-text block of portfolio content for a given
 // language, used as grounding context inside the system prompt.
 export function buildPortfolioContext(lang) {
@@ -55,6 +59,9 @@ export function buildPortfolioContext(lang) {
   return [
     "INTRODUCTION:",
     introText,
+    "",
+    "QUICK FACTS:",
+    formatFacts(data.hero?.facts || []),
     "",
     "WORK EXPERIENCE (most recent first):",
     formatExperiences(data.experiences || []),
