@@ -7,11 +7,22 @@ import fr from "../../src/translations/fr/global.json";
 
 const DATA = { en, es, fr };
 
+// Groq's free-tier TPM cap (8K tokens/min) is shared across every request,
+// and this whole context is re-sent as the system prompt on every turn -
+// so descriptions are capped to keep a couple of quick follow-up questions
+// from tripping that limit.
+const MAX_DESCRIPTION_CHARS = 220;
+
+function truncate(text, maxChars) {
+  if (!text || text.length <= maxChars) return text;
+  return text.slice(0, maxChars).trimEnd() + "…";
+}
+
 function formatExperiences(list) {
   return list
     .map(
       (e) =>
-        `- ${e.title} at ${e.entreprise} (${e.place}), ${e.initDate} - ${e.finishDate}: ${e.description}`
+        `- ${e.title} at ${e.entreprise} (${e.place}), ${e.initDate} - ${e.finishDate}: ${truncate(e.description, MAX_DESCRIPTION_CHARS)}`
     )
     .join("\n");
 }
@@ -20,7 +31,7 @@ function formatEducations(list) {
   return list
     .map(
       (ed) =>
-        `- ${ed.title}, ${ed.place} (${ed.category}), ${ed.initDate} - ${ed.finishDate}: ${ed.description}`
+        `- ${ed.title}, ${ed.place} (${ed.category}), ${ed.initDate} - ${ed.finishDate}: ${truncate(ed.description, MAX_DESCRIPTION_CHARS)}`
     )
     .join("\n");
 }
@@ -40,7 +51,7 @@ function formatProjects(list) {
   return list
     .map(
       (p) =>
-        `- ${p.title} [${p.category}], ${p.initDate} - ${p.finishDate}: ${p.description}`
+        `- ${p.title} [${p.category}], ${p.initDate} - ${p.finishDate}: ${truncate(p.description, MAX_DESCRIPTION_CHARS)}`
     )
     .join("\n");
 }

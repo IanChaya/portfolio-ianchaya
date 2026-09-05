@@ -3,10 +3,15 @@ import { buildSystemPrompt } from "./promptBuilder.js";
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 const GROQ_MODEL = "openai/gpt-oss-120b";
 
-const MAX_HISTORY_MESSAGES = 10; // most recent user/assistant turns kept
+const MAX_HISTORY_MESSAGES = 6; // most recent user/assistant turns kept
 const MAX_MESSAGE_CHARS = 1000; // per-message cap
 const RATE_LIMIT_PER_HOUR = 12; // per-IP requests
 const RATE_LIMIT_WINDOW_SECONDS = 60 * 60;
+
+// Groq's free-tier TPM cap (8K/min) means only ~3 requests/min fit
+// regardless of model. A near-miss (Groq says "retry in 500ms") is worth
+// waiting out invisibly; a multi-second wait is not worth blocking on.
+const GROQ_RETRY_MAX_WAIT_MS = 1500;
 
 function getAllowedOrigins(env) {
   return (env.ALLOWED_ORIGINS || "")
@@ -111,8 +116,8 @@ export default {
 
     const systemPrompt = buildSystemPrompt(lang);
 
-    try {
-      const groqResponse = await fetch(GROQ_URL, {
+    async function callGroq() {
+      return fetch(GROQ_URL, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${env.GROQ_API_KEY}`,
@@ -122,12 +127,38 @@ export default {
           model: GROQ_MODEL,
           messages: [{ role: "system", content: systemPrompt }, ...messages],
           temperature: 0.3,
-          max_tokens: 500,
+          max_tokens: 350,
+          // Free-tier TPM is tight (8K/min) and gpt-oss's hidden reasoning
+          // tokens count against it; this is a short factual Q&A persona
+          // that doesn't need deep reasoning, so keep it low.
+          reasoning_effort: "low",
         }),
       });
+    }
+
+    try {
+      let groqResponse = await callGroq();
+
+      // Groq's TPM window resets continuously, so a request that's only
+      // barely over the limit often succeeds a moment later. Worth one
+      // short, invisible retry - but not worth blocking the user on a
+      // multi-second wait, so skip it when retry-after is large.
+      if (groqResponse.status === 429) {
+        const retryAfterSec = parseFloat(groqResponse.headers.get("retry-after") || "");
+        if (!Number.isNaN(retryAfterSec) && retryAfterSec * 1000 <= GROQ_RETRY_MAX_WAIT_MS) {
+          await new Promise((r) => setTimeout(r, retryAfterSec * 1000));
+          groqResponse = await callGroq();
+        }
+      }
 
       if (!groqResponse.ok) {
-        console.error("Groq API error", groqResponse.status);
+        const bodyText = await groqResponse.text().catch(() => "");
+        console.error(
+          "Groq API error",
+          groqResponse.status,
+          "retry-after:", groqResponse.headers.get("retry-after"),
+          "body:", bodyText.slice(0, 300)
+        );
         return jsonResponse(
           { error: "The assistant is unavailable right now. Please try again later." },
           502,
